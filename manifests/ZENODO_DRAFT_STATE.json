@@ -1,0 +1,17 @@
+﻿{
+    "schema":  "tdc.b50.zenodo.inveniordm.resume_state.v1",
+    "script_id":  "PublicGitHub-006-R1",
+    "script_version":  "0.4.1",
+    "updated":  "2026-10-08T19:11:37.0912646+02:00",
+    "phase":  "DOI_PERSISTENT_STATE_VERIFIED",
+    "zenodo_record_id":  "23243883",
+    "reserved_doi":  "10.5281/zenodo.23243883",
+    "draft_url":  "https://zenodo.org/uploads/23243883",
+    "api_draft_url":  "https://zenodo.org/api/records/23243883/draft",
+    "reserve_doi_url":  "https://zenodo.org/api/records/23243883/draft/pids/doi",
+    "publish_url":  "https://zenodo.org/api/records/23243883/draft/actions/publish",
+    "files_url":  "https://zenodo.org/api/records/23243883/draft/files",
+    "source":  "parameter",
+    "reservation_action":  "existing_persisted_doi_reused",
+    "published":  false
+}

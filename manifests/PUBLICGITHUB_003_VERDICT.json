@@ -1,6 +1,6 @@
 ﻿{
     "schema":  "tdc.b50.publicgithub003.verdict.v2",
-    "generated":  "2026-10-08T17:16:05.5670148+02:00",
+    "generated":  "2026-10-08T19:41:10.1563478+02:00",
     "stage":  "PublicGitHub-003",
     "status":  "PUBLICGITHUB_003_REPOSITORY_METADATA_AND_REPRODUCIBILITY_FROZEN",
     "publicgithub001_pass":  true,
@@ -19,10 +19,10 @@
     "frozen_provenance_bytes_modified":  false,
     "frozen_provenance_path_audit":  "manifests/FROZEN_PROVENANCE_PATH_AUDIT.csv",
     "required_public_files_complete":  true,
-    "repository_file_count_in_manifest":  3588,
-    "github_zenodo_identifiers_present":  false,
+    "repository_file_count_in_manifest":  3590,
+    "github_zenodo_identifiers_present":  true,
     "ready_for_first_public_push":  true,
-    "ready_for_doi_archival_release":  false,
+    "ready_for_doi_archival_release":  true,
     "blockers":  [
 
                  ],

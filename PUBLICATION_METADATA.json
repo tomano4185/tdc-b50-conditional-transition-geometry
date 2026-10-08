@@ -8,9 +8,7 @@
     "corresponding_email":  "contact@infinity88labs.com",
     "funding_statement":  "This research received no external funding.",
     "competing_interests_statement":  "The author declares no competing interests.",
-    "repository_url":  "",
-    "zenodo_url":  "",
-    "zenodo_doi":  "",
+    "repository_url":  "https://github.com/tomano4185/tdc-b50-conditional-transition-geometry",
     "license_spdx":  "",
     "keywords":  [
                      "prime gaps",
@@ -18,5 +16,8 @@
                      "conditional geometry",
                      "reproducibility",
                      "falsification"
-                 ]
+                 ],
+    "zenodo_record_id":  "23243883",
+    "zenodo_doi":  "10.5281/zenodo.23243883",
+    "zenodo_url":  "https://zenodo.org/uploads/23243883"
 }

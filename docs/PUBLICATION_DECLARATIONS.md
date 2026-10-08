@@ -20,8 +20,8 @@ The author declares no competing interests.
 
 ## Repository and archival identifiers
 
-GitHub: [to be added after first public push]
+GitHub: https://github.com/tomano4185/tdc-b50-conditional-transition-geometry
 
-Zenodo: [to be added after archival deposit]
+Zenodo: https://zenodo.org/uploads/23243883
 
-DOI: [to be added after DOI minting]
+DOI: 10.5281/zenodo.23243883

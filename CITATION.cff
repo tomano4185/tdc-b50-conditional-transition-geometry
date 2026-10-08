@@ -8,8 +8,8 @@ authors:
 
     orcid: "https://orcid.org/0009-0000-1952-8508"
     email: "contact@infinity88labs.com"
-
-
+repository-code: "https://github.com/tomano4185/tdc-b50-conditional-transition-geometry"
+doi: "10.5281/zenodo.23243883"
 keywords:
   - prime gaps
   - transition operators
