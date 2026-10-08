@@ -1,0 +1,4 @@
+subset_mask,subset_key,third,n,observed_mean_effect,same_sign_as_frozen_full,retention_vs_subset_full_effect,directional_p,nominal_third_pass
+12,turn_change+density_scale_change,1,221,-0.04909502262443438,True,0.8624099212334504,0.006798640271945611,True
+12,turn_change+density_scale_change,2,221,-0.07205882352941173,True,1.2657952069716767,0.0001999600079984003,True
+12,turn_change+density_scale_change,3,222,-0.04966216216216218,True,0.8723723723723726,0.005598880223955209,True

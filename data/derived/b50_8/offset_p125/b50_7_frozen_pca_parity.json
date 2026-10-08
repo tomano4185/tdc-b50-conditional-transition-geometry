@@ -1,0 +1,6 @@
+{
+  "max_abs_error": 1.0380585280245214e-14,
+  "mean_abs_error": 2.60287097413711e-16,
+  "min_component_spearman": 1.0,
+  "pass": true
+}

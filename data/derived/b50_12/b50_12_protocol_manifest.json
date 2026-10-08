@@ -1,0 +1,300 @@
+{
+  "version": "B50.12_frozen_pair_core_cross_offset_replication_v1",
+  "created": "2026-09-08 13:49:04",
+  "scientific_role": "frozen two-channel pair-core replication across five existing offset-window phases",
+  "lineage": {
+    "b50_10_verdict": "CHANNEL_ASSOCIATION_WITHOUT_SCORE_LOCALIZATION",
+    "b50_10_ok": true,
+    "b50_11_verdict": "PAIRWISE_CORE_RECAPTURES_FULL_EFFECT",
+    "b50_11_ok": true,
+    "b50_8_verdict": "MULTI_OFFSET_PHASE_ROBUST_EFFECT_INVARIANCE",
+    "b50_8_ok": true,
+    "b50_8_offsets": [
+      25,
+      50,
+      100,
+      125
+    ],
+    "b50_8_offsets_ok": true,
+    "pair_channels": [
+      "turn_change",
+      "density_scale_change"
+    ],
+    "pair_key": "turn_change+density_scale_change",
+    "minimal_size": 2,
+    "minimal_keys": [
+      "turn_change+density_scale_change"
+    ],
+    "exact_unique_pair": true,
+    "b50_11_pair_effect": -0.0569277108433735,
+    "b50_11_pair_retention": 0.9630573248407642,
+    "b50_10_full_effect": -0.059111445783132543,
+    "b50_7_plus75_verdict": "EXTERNAL_OFFSET_ADJACENCY_SPECIFICITY_REPLICATED",
+    "b50_7_plus75_offset": 75,
+    "b50_7_plus75_ok": true,
+    "pass": true
+  },
+  "pair_core": {
+    "channels": [
+      "turn_change",
+      "density_scale_change"
+    ],
+    "selection_source": "D:\\hpc_project\\tdc_unified_core\\results\\b50_11_channel_interactions\\b50_11_summary.json",
+    "selection_rule": "unique minimal sufficient subset from exhaustive 31-subset B50.11 audit",
+    "reference_effect_offset0": -0.0569277108433735,
+    "reference_retention_vs_full": 0.9630573248407642,
+    "reselection_allowed": false
+  },
+  "offsets": [
+    25,
+    50,
+    75,
+    100,
+    125
+  ],
+  "offset_sources": {
+    "75": "B50.7 reference offset directory",
+    "25,50,100,125": "B50.8 frozen subrun directories"
+  },
+  "frozen_source_paths": {
+    "operator_stack": "D:\\hpc_project\\tdc_unified_core\\results\\b50_2_dimensionality\\b50_2_operator_stack.npz",
+    "b50_4_script": "D:\\hpc_project\\tdc_unified_core\\scripts\\tdc_tor_a_b50_4_continuous_state_geometry_slow_mode_dynamics_audit.py",
+    "b50_4_protocol": "D:\\hpc_project\\tdc_unified_core\\results\\b50_4_continuous_dynamics\\b50_4_protocol_manifest.json",
+    "b50_4_front_features": "D:\\hpc_project\\tdc_unified_core\\results\\b50_4_continuous_dynamics\\b50_4_front_features_long.csv",
+    "b50_6_summary": "D:\\hpc_project\\tdc_unified_core\\results\\b50_6_adjacency_specificity\\b50_6_summary.json"
+  },
+  "core_input_hashes": {
+    "b50_7_script": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\scripts\\tdc_tor_a_b50_7_external_offset_window_adjacency_replication.py",
+      "sha256": "4103466a15e0d1255b7c80b8633edac4a3be419ce8c55267d136073ab29ab2f7"
+    },
+    "b50_10_protocol": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_10_transition_geometry_mechanism\\b50_10_protocol_manifest.json",
+      "sha256": "fbb8f083e20d6ace18b5e89f4ae4f41f5b8c0279ffa97650321f9ea2872c5eaf"
+    },
+    "b50_10_summary": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_10_transition_geometry_mechanism\\b50_10_summary.json",
+      "sha256": "385357b8fe1ecd5c4f84e5deb93546e3d88aae2c1a1a8a29c1e1711282919ae3"
+    },
+    "b50_11_protocol": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_11_channel_interactions\\b50_11_protocol_manifest.json",
+      "sha256": "14cbcb66c463985f3ca34e330f2aff2f28a6bab8a8f68a0f34899419f43a3d15"
+    },
+    "b50_11_summary": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_11_channel_interactions\\b50_11_summary.json",
+      "sha256": "c29e8c6182abf6133679fc7d0b15c616874f354531a99d18ab8bf5f9e3eb0a07"
+    },
+    "b50_11_minimal": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_11_channel_interactions\\b50_11_minimal_sufficient_subsets.csv",
+      "sha256": "ccb38fe52f672657a8ae6585ded79b55340e88d2614897e35ecdd676d30c4990"
+    },
+    "b50_11_shapley": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_11_channel_interactions\\b50_11_shapley.csv",
+      "sha256": "fba55befaecad9201fd0ef3089dcd543290cc3799db9c0bf8aa887dc037d0048"
+    },
+    "b50_8_summary": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\b50_8_summary.json",
+      "sha256": "5046f4d94fe309761388d9127f31cd60f5284d87f772ddc1566b97b2f8289c8e"
+    },
+    "frozen_operator_stack": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_2_dimensionality\\b50_2_operator_stack.npz",
+      "sha256": "6d1b74772b70e7a9dbdd8b099c6306ae7ae2f7921176457f1d148f6b2340546a"
+    },
+    "frozen_b50_4_script": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\scripts\\tdc_tor_a_b50_4_continuous_state_geometry_slow_mode_dynamics_audit.py",
+      "sha256": "24da4d88d999802764976b92c06bc4432bce3b1f965d80df05d2843d7c3b99c6"
+    },
+    "frozen_b50_4_protocol": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_4_continuous_dynamics\\b50_4_protocol_manifest.json",
+      "sha256": "6b1aae4ca73d7f779a6885647d1198f4c1d17cbe5dbd76b0beb1e52b2fd75573"
+    },
+    "frozen_b50_4_front_features": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_4_continuous_dynamics\\b50_4_front_features_long.csv",
+      "sha256": "b5783dd9f02d1983f01a5fef5689ce46a7f6ea1b9e99a89a0fe089fc6feca8e3"
+    },
+    "frozen_b50_6_summary": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_6_adjacency_specificity\\b50_6_summary.json",
+      "sha256": "41a61e299782b520c7cecca73826465ef5fe0f47c0a8c98ac712f42cf55f22c9"
+    }
+  },
+  "offset_input_hashes": {
+    "25": {
+      "plan_csv": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p025\\b50_7_offset_window_plan.csv",
+        "sha256": "64ee0fa12471daf1f4422da02cfc4d65e5f9ed404e4e9e674c80b511ee563b0d"
+      },
+      "plan_json": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p025\\b50_7_offset_window_plan.json",
+        "sha256": "bc925b99d351750a145ed151bf64d422de002eae4b2d8eaceb5e2d3692aec29f"
+      },
+      "external_stack": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p025\\b50_7_offset_operator_stack.npz",
+        "sha256": "68a8c8f6324552412a579b08e0a490bee34be986f9e36631ff1067443b220fe4"
+      },
+      "extraction_manifest": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p025\\b50_7_extraction_manifest.json",
+        "sha256": "11ae861a145140830540485cdcafc44e15732b736b96436a007802d3de5dbb36"
+      },
+      "summary": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p025\\b50_7_summary.json",
+        "sha256": "f49c7921b6c3b523f9d6c75f3c69bcbc9e4d23c7c0f4fd2bb0462f68fa2dd11d"
+      },
+      "transition_specificity": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p025\\b50_7_transition_specificity.csv",
+        "sha256": "a0164aa778a02a20360ac8b697d48928c2673174e7da395d241dd54ac669a45a"
+      },
+      "matching_audit": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p025\\b50_7_matching_audit.csv",
+        "sha256": "8fda5b8469708d4c332e67df68e183ad828a35f16048ba32bc526970234584ad"
+      }
+    },
+    "50": {
+      "plan_csv": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p050\\b50_7_offset_window_plan.csv",
+        "sha256": "07eb2a8d72fdd247a49d255c0ce37c85c42c48f2e168c9e7c7352979362194f1"
+      },
+      "plan_json": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p050\\b50_7_offset_window_plan.json",
+        "sha256": "40a35638fda73b48b446443125eaf0a360e02dc5c07ea37272bba2615e13c924"
+      },
+      "external_stack": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p050\\b50_7_offset_operator_stack.npz",
+        "sha256": "0574458087c7ab03275f6fe4ac74077f7a526852e343ac91d914ba5ce678fa53"
+      },
+      "extraction_manifest": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p050\\b50_7_extraction_manifest.json",
+        "sha256": "ec6d38d1f110724d26ab652ddba045e1874358d9054de6433fa70dd94a66ce9d"
+      },
+      "summary": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p050\\b50_7_summary.json",
+        "sha256": "a9789d19805fb1b3da2156de5f52da971a355c35bb9556ceb1f4513bfe410c4c"
+      },
+      "transition_specificity": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p050\\b50_7_transition_specificity.csv",
+        "sha256": "9898e91e94c138a4722826b6364d1c210fed78d99c8dfb412f8a27743f6cf41b"
+      },
+      "matching_audit": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p050\\b50_7_matching_audit.csv",
+        "sha256": "6faf0a96665fa3e370f7c37478fd14154fd614e122b13a6414f41f345907d3a5"
+      }
+    },
+    "75": {
+      "plan_csv": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_7_external_offset\\b50_7_offset_window_plan.csv",
+        "sha256": "88aaf493ee184cfeea3b49e9e3f9c19f33735966af08c4aaa60a7b97b7b08639"
+      },
+      "plan_json": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_7_external_offset\\b50_7_offset_window_plan.json",
+        "sha256": "fa2fceb6fdc536a184914e7997a3166692e7f9a5afc53be6dfca26cc617ae330"
+      },
+      "external_stack": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_7_external_offset\\b50_7_offset_operator_stack.npz",
+        "sha256": "b28dcc73072c951250bd276e2f5e3c1642017bdcecdbe33e95f1c72dfe2650d0"
+      },
+      "extraction_manifest": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_7_external_offset\\b50_7_extraction_manifest.json",
+        "sha256": "9521b9073c74059a7ac87abf09d6732cd3d8581f9870884c913c86cc62f30b9a"
+      },
+      "summary": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_7_external_offset\\b50_7_summary.json",
+        "sha256": "6f4e0465cfacb48d74136f7de9551b070d319d07377d3853238debd1135547ed"
+      },
+      "transition_specificity": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_7_external_offset\\b50_7_transition_specificity.csv",
+        "sha256": "78e84f741bad0fe0f7d12353de3b888665f3a889a205100eb7ae0048b896f2fb"
+      },
+      "matching_audit": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_7_external_offset\\b50_7_matching_audit.csv",
+        "sha256": "6e17e46f47811618f72b90e1651e63d35ff042982e57840abfbc8418a9c2968f"
+      }
+    },
+    "100": {
+      "plan_csv": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p100\\b50_7_offset_window_plan.csv",
+        "sha256": "a280520061bbb23c62beaec5db0e9f663543a4549a6f1ea09eed09c1c4a258e9"
+      },
+      "plan_json": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p100\\b50_7_offset_window_plan.json",
+        "sha256": "ec63756ca62c09bb84677401820bed45614a969990dfa386d3fb0802a27cc4e7"
+      },
+      "external_stack": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p100\\b50_7_offset_operator_stack.npz",
+        "sha256": "34236e3c1638b8d50a4e8c016063734455cd1adb350b4424620ff51b9128af9d"
+      },
+      "extraction_manifest": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p100\\b50_7_extraction_manifest.json",
+        "sha256": "fdb004f4d92c2415a2dc89d4aea2eddcd136b31a0f4fb1a4fe18f33c91645c1b"
+      },
+      "summary": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p100\\b50_7_summary.json",
+        "sha256": "606471c6c9cefa6f3ba15e09fb33da24fcd38c593ae3c7fab3c81ac7fa58b5aa"
+      },
+      "transition_specificity": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p100\\b50_7_transition_specificity.csv",
+        "sha256": "f967e1972b2f898fb9c08e5c18ac137ebe1141d4c32a5111a50806861fee3d77"
+      },
+      "matching_audit": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p100\\b50_7_matching_audit.csv",
+        "sha256": "01fcaa03eedb2c605a9f226580e523034db40fb0aa2629cc8e42a3516aa553a4"
+      }
+    },
+    "125": {
+      "plan_csv": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p125\\b50_7_offset_window_plan.csv",
+        "sha256": "ce3aeed23419718b7ec3497b2eadb41b32a234ae3da61a76170aa78af14db384"
+      },
+      "plan_json": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p125\\b50_7_offset_window_plan.json",
+        "sha256": "96062ec1defb1066aeb86890b1c23fcd260512807bda060b2de7b60851216c06"
+      },
+      "external_stack": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p125\\b50_7_offset_operator_stack.npz",
+        "sha256": "c066857790e2c9c33676bf3f06ccf7d7be31110a24433980687d59164155c7b0"
+      },
+      "extraction_manifest": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p125\\b50_7_extraction_manifest.json",
+        "sha256": "767945529c67e8d1953ba4a2da51464c390d8b30fec23cc9cefa5ab434e83733"
+      },
+      "summary": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p125\\b50_7_summary.json",
+        "sha256": "45ce1875952b63356f68e423d6343786919e409c679b0cb79fa8e3ed34740b75"
+      },
+      "transition_specificity": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p125\\b50_7_transition_specificity.csv",
+        "sha256": "7533fca55d77678c9e391df19907c1d8e764a7e06bce42b12fcbd24d456cd776"
+      },
+      "matching_audit": {
+        "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p125\\b50_7_matching_audit.csv",
+        "sha256": "e799c6f9e5d67ad1c787157d0180a854224d62200feaf151b47cf694ed2863e1"
+      }
+    }
+  },
+  "technical_reproduction_gate": {
+    "full_b50_7_consensus_percentile_max_abs_error": 1e-12,
+    "full_b50_7_effect_max_abs_error": 1e-12,
+    "exact_control_identity_reuse": true
+  },
+  "pair_offset_gate": {
+    "all_offsets_negative_required": 5,
+    "nominal_offsets_required": 4,
+    "nominal_effect_max": -0.04,
+    "holm_directional_p_max": 0.05,
+    "median_effect_max": -0.05,
+    "config_negative_fraction_min": 0.8,
+    "config_pass_offsets_required": 4,
+    "thirds_pass_offsets_required": 4,
+    "material_positive_reversal_min": 0.04
+  },
+  "thirds_gate": {
+    "negative_required": 3,
+    "nominal_required": 2,
+    "effect_max": -0.04,
+    "p_lower_max": 0.05
+  },
+  "randomization_replicates": 5000,
+  "seed": 501012,
+  "protocol_modified": false,
+  "plan_pass": true,
+  "scientific_boundary": "Same underlying prime corpus. Pair frozen from original offset-0 B50.11 audit. Offset windows/full-score outcomes pre-existed B50.12, so this is not a pristine blinded prospective test and not independent-corpus replication.",
+  "protocol_fingerprint": "3d8d3543573086e6062eeb8f720645a25fbfbb8117e825ddd0a1ec807b505da9"
+}

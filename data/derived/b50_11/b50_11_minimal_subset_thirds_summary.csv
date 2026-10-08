@@ -1,0 +1,2 @@
+subset_mask,subset_key,same_direction_thirds,nominal_thirds,thirds_robustness_pass
+12,turn_change+density_scale_change,3,3,True

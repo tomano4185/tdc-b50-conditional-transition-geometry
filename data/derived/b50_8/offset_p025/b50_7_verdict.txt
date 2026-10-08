@@ -1,0 +1,101 @@
+B50.7 — External Offset-Window Adjacency Replication
+=========================================================
+
+Interpretation scope
+--------------------
+New offset WINDOW STATES: YES
+Identical to original windows: NO
+Same underlying prime corpus: YES
+Independent-corpus replication: NO
+
+Integrity / novelty
+-------------------
+training operator stack              = (666, 4096)
+offset operator stack                = (666, 4096)
+offset segments                      = 25
+window length                        = 200
+identical original windows           = 0
+offset novelty PASS                  = True
+external labels exact                = True
+operator dimension exact             = True
+frozen PCA parity PASS               = True
+external raw-feature parity PASS     = True
+
+Frozen replication target
+-------------------------
+B50.6 verdict                        = PHYSICAL_ADJACENCY_SPECIFICITY_REPLICATED
+B50.6 mean percentile effect         = -0.059111445783132543
+frozen replication direction         = negative
+
+Matched-control protocol
+------------------------
+physical source transitions used     = 664
+controls per transition              = 20
+minimum index separation             = 10
+matching geometry                    = external full 4096D operator Euclidean
+median |log-distance match error|    = 0.0026234800983753193
+q90 |log-distance match error|       = 0.025272913046136394
+MATCHING PASS                        = True
+
+Primary external replication
+----------------------------
+mean physical percentile             = 0.4459337349397591
+median physical percentile           = 0.4
+mean percentile effect vs 0.5        = -0.054066265060240926
+B50.6 reference effect               = -0.059111445783132543
+effect difference vs B50.6           = 0.005045180722891618
+effect ratio vs B50.6                = 0.9146496815286616
+matched identity p_lower             = 0.0001999600079984003
+two-sided p diagnostic               = 0.0001999600079984003
+PRIMARY REPLICATION PASS             = True
+
+Frozen representation convergence
+---------------------------------
+negative-effect config fraction      = 1.0
+CONFIG CONVERGENCE PASS              = True
+
+Offset-sequence thirds robustness
+--------------------------------
+negative thirds                      = 3/3
+nominally replicated thirds          = 3/3
+THIRDS ROBUSTNESS PASS               = True
+
+ third  transition_count  first_transition_index  last_transition_index  n_transitions  observed_mean_percentile  observed_median_percentile  observed_mean_effect  null_mean_effect  null_sd_effect  p_lower  p_two_sided_diagnostic  negative_direction  nominal_replication_pass
+     1               221                       1                    221            221                  0.442986                        0.40             -0.057014         -0.000501        0.019881 0.001400                0.003399                True                      True
+     2               221                     222                    442            221                  0.440385                        0.40             -0.059615         -0.000491        0.019560 0.001200                0.002200                True                      True
+     3               222                     443                    664            222                  0.454392                        0.45             -0.045608         -0.000630        0.019936 0.012997                0.021996                True                      True
+
+FINAL VERDICT: EXTERNAL_OFFSET_ADJACENCY_SPECIFICITY_REPLICATED
+
+REASON:
+The frozen negative physical-adjacency effect replicates on new offset-window states, passes matched identity randomization, converges across frozen representations, and is robust across all three offset-sequence thirds.
+
+Interpretation boundary
+-----------------------
+This is an out-of-sample OFFSET-WINDOW replication on new window states from
+the same underlying prime corpus. It is not an independent-corpus replication.
+No B59/B59.1 selector or predictive outcome is used.
+No individual-prime prediction, RH, or theorem claim is made.
+
+Key outputs
+-----------
+b50_7_offset_window_plan.csv
+b50_7_offset_window_plan.json
+b50_7_offset_operator_stack.npz
+b50_7_operator_metadata.csv
+b50_7_extraction_status.csv
+b50_7_extraction_manifest.json
+b50_7_protocol_manifest.json
+b50_7_frozen_pca_parity.json
+b50_7_external_raw_feature_parity.csv
+b50_7_matching_audit.csv
+b50_7_transition_specificity.csv
+b50_7_config_specificity.csv
+b50_7_primary_null.csv
+b50_7_replication_thirds.csv
+b50_7_summary.json
+b50_7_verdict.txt
+b50_7_primary_null.png
+b50_7_specificity_by_transition.png
+b50_7_config_convergence.png
+b50_7_thirds_robustness.png

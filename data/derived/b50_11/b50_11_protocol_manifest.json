@@ -1,0 +1,131 @@
+{
+  "version": "B50.11_channel_redundancy_interaction_audit_v1",
+  "created": "2026-09-08 13:11:10",
+  "scientific_role": "exhaustive 31-subset redundancy / interaction audit of the frozen B50.10 / B50.6 composite score",
+  "b50_10_lineage": {
+    "b50_10_verdict": "CHANNEL_ASSOCIATION_WITHOUT_SCORE_LOCALIZATION",
+    "b50_10_verdict_ok": true,
+    "b50_6_verdict": "PHYSICAL_ADJACENCY_SPECIFICITY_REPLICATED",
+    "b50_6_verdict_ok": true,
+    "b50_10_reproduction_pass": true,
+    "b50_10_reproduction_file_pass": true,
+    "b50_10_frozen_input_hashes_exact": true,
+    "full_effect": -0.059111445783132543,
+    "b50_6_effect": -0.059111445783132543,
+    "full_effect_exact": true,
+    "cache_hash_frozen": "cab061f39044fdeadb8b21c04c227ee8dcda596bfec7616a320bf3d8f9ab973b",
+    "cache_hash_actual": "cab061f39044fdeadb8b21c04c227ee8dcda596bfec7616a320bf3d8f9ab973b",
+    "cache_hash_exact": true,
+    "channels_exact": true,
+    "pass": true
+  },
+  "cube_integrity": {
+    "transition_count": 664,
+    "config_count": 15,
+    "candidate_count": 21,
+    "control_count": 20,
+    "raw_cube_shape": [
+      664,
+      15,
+      21,
+      5
+    ],
+    "shape_ok": true,
+    "transition_unique": true,
+    "physical_dest_exact": true,
+    "finite_raw": true,
+    "pass": true
+  },
+  "inputs": {
+    "b50_10_protocol_manifest": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_10_transition_geometry_mechanism\\b50_10_protocol_manifest.json",
+      "sha256": "fbb8f083e20d6ace18b5e89f4ae4f41f5b8c0279ffa97650321f9ea2872c5eaf"
+    },
+    "b50_10_summary": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_10_transition_geometry_mechanism\\b50_10_summary.json",
+      "sha256": "385357b8fe1ecd5c4f84e5deb93546e3d88aae2c1a1a8a29c1e1711282919ae3"
+    },
+    "b50_10_cache_manifest": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_10_transition_geometry_mechanism\\b50_10_cache_manifest.json",
+      "sha256": "495360eee2f543f271e01ec81f42e7e319ff1b68a1cebd6532e7dbd97bfc6a8b"
+    },
+    "b50_10_mechanism_cube": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_10_transition_geometry_mechanism\\b50_10_mechanism_cube.npz",
+      "sha256": "cab061f39044fdeadb8b21c04c227ee8dcda596bfec7616a320bf3d8f9ab973b"
+    },
+    "b50_10_reproduction_audit": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_10_transition_geometry_mechanism\\b50_10_reproduction_audit.json",
+      "sha256": "3a4d26871abd2ae2cbdc77f6488806ade5abb8ff35f65b68a0e591cb025ded9f"
+    },
+    "b50_10_channel_effects": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_10_transition_geometry_mechanism\\b50_10_channel_effects.csv",
+      "sha256": "72bf683ca6e7ddeaa5504c80e1b3b0dc4b4fe8a43263317029dfed3445930653"
+    },
+    "b50_10_leave_one_out": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_10_transition_geometry_mechanism\\b50_10_leave_one_out.csv",
+      "sha256": "3f4a6e11551b2112002ce6536cf2fc32cf54fe8e62a38ea5f31f28bc9ee28e2a"
+    }
+  },
+  "channels": [
+    "speed",
+    "acceleration",
+    "turn_change",
+    "density_scale_change",
+    "diffusion_step"
+  ],
+  "subset_family": {
+    "nonempty_subset_count": 31,
+    "expected_count": 31,
+    "all_subsets_predeclared": true,
+    "empty_coalition_effect": 0.0,
+    "empty_coalition_semantics": "constant tied candidate score -> percentile 0.5 -> centered effect 0"
+  },
+  "subset_sufficiency_gate": {
+    "same_sign_as_full": true,
+    "absolute_effect_retention_min": 0.9,
+    "holm_directional_p_max": 0.05,
+    "multiplicity_family_size": 31
+  },
+  "shapley_protocol": {
+    "players": [
+      "speed",
+      "acceleration",
+      "turn_change",
+      "density_scale_change",
+      "diffusion_step"
+    ],
+    "characteristic_function": "v(S)=mean physical matched-percentile(S)-0.5",
+    "empty_value": 0.0,
+    "efficiency_gate_abs_error_max": 1e-12
+  },
+  "pair_interaction_protocol": {
+    "global_index": "Shapley interaction index over all contexts S subset N\\{i,j}",
+    "pair_only_synergy": "v({i,j})-v({i})-v({j})+v(empty)",
+    "role": "descriptive interaction decomposition"
+  },
+  "thirds_protocol": {
+    "applies_to": "minimal sufficient subsets",
+    "same_direction_required": 3,
+    "nominal_required": 2,
+    "third_retention_min": 0.7,
+    "directional_p_max": 0.05
+  },
+  "randomization_replicates": 5000,
+  "seed": 501011,
+  "thresholds": {
+    "full_effect_abs_error_max": 1e-12,
+    "shapley_efficiency_abs_error_max": 1e-12,
+    "subset_retention_min": 0.9,
+    "subset_holm_directional_p_max": 0.05,
+    "subset_near_full_retention_min": 0.95,
+    "third_same_direction_required": 3,
+    "third_nominal_required": 2,
+    "third_retention_min": 0.7,
+    "third_directional_p_max": 0.05,
+    "shapley_top2_abs_share_concentrated_min": 0.75,
+    "pair_interaction_material_abs_min": 0.01
+  },
+  "protocol_modified": false,
+  "plan_pass": true,
+  "scientific_boundary": "Same-source score decomposition only. No new controls, no independent corpus, no B59 validation, no individual-prime prediction, no RH/theorem claim."
+}

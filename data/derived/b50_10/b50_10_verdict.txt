@@ -1,0 +1,111 @@
+B50.10 — Conditional Transition Geometry Mechanism Audit
+===========================================================
+
+Interpretation scope
+--------------------
+Mechanism/decomposition of frozen B50.6 effect: YES
+Exact B50.6 matched controls reused: YES
+B50.6-B50.8 lineage frozen: YES
+Independent-corpus replication: NO
+B59/B59.1 used: NO
+
+Frozen lineage
+--------------
+B50.6 = PHYSICAL_ADJACENCY_SPECIFICITY_REPLICATED
+B50.7 = EXTERNAL_OFFSET_ADJACENCY_SPECIFICITY_REPLICATED
+B50.8 = MULTI_OFFSET_PHASE_ROBUST_EFFECT_INVARIANCE
+frozen input hashes exact = True
+
+B50.6 endpoint reproduction
+---------------------------
+max physical front-score error       = 2.609024107869118e-14
+max consensus percentile error       = 0.0
+reconstructed full effect            = -0.059111445783132543
+frozen B50.6 full effect             = -0.059111445783132543
+effect absolute error                = 0.0
+REPRODUCTION PASS                    = True
+
+Raw-channel decomposition
+-------------------------
+             channel  n_transitions  observed_mean_percentile  observed_median_percentile  observed_mean_effect  null_mean_effect  null_sd_effect  p_lower  p_upper  p_two_sided effect_direction  holm_p_two_sided  effect_size_gate  holm_significance_gate  channel_confirmed
+               speed            664                  0.472289                       0.500             -0.027711         -0.001948        0.011349 0.012997 0.987203     0.017397         negative          0.034793             False                    True              False
+        acceleration            664                  0.434864                       0.400             -0.065136          0.000061        0.011625 0.000200 1.000000     0.000200         negative          0.001000              True                    True               True
+         turn_change            664                  0.442093                       0.450             -0.057907         -0.000247        0.011684 0.000200 1.000000     0.000200         negative          0.001000              True                    True               True
+density_scale_change            664                  0.457492                       0.425             -0.042508          0.002449        0.011182 0.000200 1.000000     0.000400         negative          0.001200              True                    True               True
+      diffusion_step            664                  0.473268                       0.450             -0.026732         -0.001200        0.011440 0.012198 0.988802     0.018996         negative          0.034793             False                    True              False
+
+Confirmed channels after Holm + effect-size gate
+------------------------------------------------
+['acceleration', 'turn_change', 'density_scale_change']
+
+Leave-one-channel-out composite
+-------------------------------
+                   variant      removed_channel  n_transitions  observed_mean_percentile  observed_median_percentile  observed_mean_effect  null_mean_effect  null_sd_effect  p_lower  p_upper  p_two_sided  full_effect_reference  abs_effect_retention_fraction  abs_effect_attenuation_fraction  material_attenuation
+                      full                                 664                  0.440889                        0.40             -0.059111         -0.001199        0.011149   0.0002      1.0       0.0002              -0.059111                       1.000000                         0.000000                 False
+               minus_speed                speed            664                  0.440663                        0.40             -0.059337         -0.001203        0.011193   0.0002      1.0       0.0002              -0.059111                       1.003822                        -0.003822                 False
+        minus_acceleration         acceleration            664                  0.439759                        0.40             -0.060241         -0.001046        0.011180   0.0002      1.0       0.0002              -0.059111                       1.019108                        -0.019108                 False
+         minus_turn_change          turn_change            664                  0.449661                        0.40             -0.050339         -0.001200        0.011246   0.0002      1.0       0.0002              -0.059111                       0.851592                         0.148408                 False
+minus_density_scale_change density_scale_change            664                  0.451544                        0.45             -0.048456         -0.001103        0.011110   0.0002      1.0       0.0002              -0.059111                       0.819745                         0.180255                 False
+      minus_diffusion_step       diffusion_step            664                  0.446950                        0.40             -0.053050         -0.000259        0.011334   0.0002      1.0       0.0002              -0.059111                       0.897452                         0.102548                 False
+
+Score-localized channels
+------------------------
+[]
+
+Directional cosine diagnostic
+-----------------------------
+mean physical cosine percentile      = 0.5579066265060241
+mean cosine percentile effect        = 0.05790662650602407
+p_upper                              = 0.0001999600079984003
+median physical cosine               = -0.4655907708923661
+median control cosine                = -0.4865906084275249
+mean physical-control cosine         = 0.02167430639773301
+directional positive gate            = True
+
+Channel thirds stability
+------------------------
+             channel  full_effect  same_direction_thirds  nominal_thirds  thirds_stability_pass
+               speed    -0.027711                      3               1                  False
+        acceleration    -0.065136                      3               3                   True
+         turn_change    -0.057907                      3               2                   True
+density_scale_change    -0.042508                      3               2                   True
+      diffusion_step    -0.026732                      3               1                  False
+
+FINAL VERDICT: CHANNEL_ASSOCIATION_WITHOUT_SCORE_LOCALIZATION
+
+REASON:
+At least one raw channel is Holm-confirmed with a nontrivial percentile effect, but no single channel satisfies the frozen leave-one-out material-attenuation criterion. The channel structure is associated with the effect without clean single-channel score localization.
+
+Interpretation boundary
+-----------------------
+B50.10 decomposes the already replicated B50.6 matched adjacency-specificity
+endpoint. A leave-one-channel-out attenuation identifies score dependence,
+not causal mechanism. This is not independent-corpus replication, does not
+validate B59, does not predict individual primes, and is not RH/theorem evidence.
+
+Key outputs
+-----------
+b50_10_protocol_manifest.json
+b50_10_plan.txt
+b50_10_frozen_control_map.csv
+b50_10_range_mapping_audit.csv
+b50_10_frozen_input_audit.csv
+b50_10_mechanism_cube.npz
+b50_10_cache_manifest.json
+b50_10_reproduction_audit.json
+b50_10_full_score_reproduction_by_config.csv
+b50_10_channel_effects.csv
+b50_10_channel_null.csv
+b50_10_channel_thirds.csv
+b50_10_channel_stability_summary.csv
+b50_10_leave_one_out.csv
+b50_10_leave_one_out_by_transition.csv
+b50_10_directional_geometry.csv
+b50_10_directional_null.csv
+b50_10_directional_summary.json
+b50_10_summary.json
+b50_10_verdict.txt
+b50_10_channel_effects.png
+b50_10_leave_one_out.png
+b50_10_leave_one_out_attenuation.png
+b50_10_directional_advantage.png

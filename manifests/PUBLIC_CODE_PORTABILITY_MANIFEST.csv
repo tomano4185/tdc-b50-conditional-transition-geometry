@@ -1,0 +1,3 @@
+﻿"File","CanonicalSourceSHA256","PublicCopySHA256","Transformation","ScientificComputationChanged","InvocationInterfaceChanged","CanonicalSourceModified","Status"
+"code\tdc_tor_a_b50_1_state_geometry_adequacy_audit.py","504b29fa9ed92c5fad5b4352520ba0ba4e990fad524075553fcde807eefb7bf0","57d2d81feaffd53acc1b7a931e41c0cce75df416666189ef15e65cd26bff248d","DOCSTRING_EXAMPLE_PATHS_ONLY","False","False","False","PASS_DOCSTRING_PATHS_SANITIZED"
+"code\PUB003_RUN.ps1","ff097cec00ad8c03c86504e1a2ef5bed7644ce046a5feade30b38253eaf8465d","bfd0687b16a55c870d231bfb728a4137148495eccde3e5c95d07d61f3a2a346e","MACHINE_LOCAL_WRAPPER_TO_EXPLICIT_PORTABLE_PARAMETERS","False","True","False","PASS_PORTABLE_WRAPPER_CREATED"

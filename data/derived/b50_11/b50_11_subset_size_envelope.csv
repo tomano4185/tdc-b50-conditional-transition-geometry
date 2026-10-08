@@ -1,0 +1,6 @@
+subset_size,subset_count,mean_effect,median_effect,min_effect,max_effect,best_negative_subset,best_negative_effect,best_absolute_subset,best_absolute_effect,sufficient_count
+1,5,-0.02476656626506022,-0.027033132530120463,-0.0467243975903614,0.0036521084337349796,density_scale_change,-0.0467243975903614,density_scale_change,-0.0467243975903614,0
+2,10,-0.040741716867469885,-0.046009036144578325,-0.0569277108433735,-0.009412650602409645,turn_change+density_scale_change,-0.0569277108433735,turn_change+density_scale_change,-0.0569277108433735,1
+3,10,-0.04870481927710845,-0.04775978915662654,-0.0599774096385543,-0.03332078313253012,turn_change+density_scale_change+diffusion_step,-0.0599774096385543,turn_change+density_scale_change+diffusion_step,-0.0599774096385543,3
+4,5,-0.05428463855421688,-0.05304969879518073,-0.060240963855421714,-0.04845632530120486,speed+turn_change+density_scale_change+diffusion_step,-0.060240963855421714,speed+turn_change+density_scale_change+diffusion_step,-0.060240963855421714,2
+5,1,-0.059111445783132543,-0.059111445783132543,-0.059111445783132543,-0.059111445783132543,speed+acceleration+turn_change+density_scale_change+diffusion_step,-0.059111445783132543,speed+acceleration+turn_change+density_scale_change+diffusion_step,-0.059111445783132543,1

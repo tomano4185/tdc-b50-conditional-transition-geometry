@@ -1,0 +1,34 @@
+# Repository licensing map
+
+This public repository uses two licenses.
+
+## MIT
+
+Applies to executable source code and scripts, including:
+
+- `code/**`
+- root-level `*.py`, `*.ps1`, `*.cmd`, and `*.bat` files
+- executable helper/configuration code where clearly identified as code
+
+See `LICENSES/MIT.txt`.
+
+## Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Applies to the repository's non-code public research and publication materials,
+including:
+
+- `data/derived/**`
+- `tables/**`
+- `figures/**`
+- `docs/**`
+- `manifests/**`
+- `README.md`
+- `REFERENCES.bib`
+- `CITATION.cff` when present
+- other non-code research metadata unless explicitly stated otherwise
+
+See `LICENSES/CC-BY-4.0.txt`.
+
+License files themselves state or link to their own governing terms. Third-party
+material, if any, remains subject to its original rights and is not relicensed by
+this mapping merely by being referenced.

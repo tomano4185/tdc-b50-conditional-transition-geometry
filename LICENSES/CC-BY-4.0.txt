@@ -1,0 +1,14 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+SPDX-License-Identifier: CC-BY-4.0
+Canonical license URL: https://creativecommons.org/licenses/by/4.0/
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode.en
+
+The non-code public research and publication materials identified in the root
+`LICENSE` mapping are made available under CC BY 4.0.
+
+In practical terms, reuse and adaptation are permitted subject to the license
+conditions, including appropriate attribution, a license reference, and an
+indication of changes where applicable.
+
+The canonical Creative Commons legal code at the URL above is authoritative.

@@ -1,0 +1,21 @@
+{
+  "version": "B50.7_external_offset_window_adjacency_replication_v1",
+  "created": "2026-08-28 02:17:43",
+  "prime_root": "d:\\primes_output",
+  "b50_script": "d:\\hpc_project\\tdc_unified_core\\scripts\\tdc_tor_a_b50_predictive_jump_forecasting.py",
+  "b50_script_sha256": "655d0e27e9d5e6373e9815b52bb49aa470a7d2ba5815a1590b68984fc354285d",
+  "training_operator_stack": "d:\\hpc_project\\tdc_unified_core\\results\\b50_2_dimensionality\\b50_2_operator_stack.npz",
+  "training_operator_stack_sha256": "6d1b74772b70e7a9dbdd8b099c6306ae7ae2f7921176457f1d148f6b2340546a",
+  "plan_csv": "d:\\hpc_project\\tdc_unified_core\\results\\b50_7_external_offset\\b50_7_offset_window_plan.csv",
+  "plan_csv_sha256": "88aaf493ee184cfeea3b49e9e3f9c19f33735966af08c4aaa60a7b97b7b08639",
+  "range_count": 665,
+  "operator_dim": 4096,
+  "stack_shape": [
+    665,
+    4096
+  ],
+  "gap_bins": 64,
+  "labels_exact_against_plan": true,
+  "elapsed_seconds": 151903.966640234,
+  "hardlink_only_policy": true
+}

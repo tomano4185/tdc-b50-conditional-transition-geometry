@@ -1,0 +1,49 @@
+B50.10 — Conditional Transition Geometry Mechanism Audit / PLAN
+=================================================================
+
+Frozen lineage
+--------------
+B50.6 verdict                         = PHYSICAL_ADJACENCY_SPECIFICITY_REPLICATED
+B50.7 verdict                         = EXTERNAL_OFFSET_ADJACENCY_SPECIFICITY_REPLICATED
+B50.8 verdict                         = MULTI_OFFSET_PHASE_ROBUST_EFFECT_INVARIANCE
+lineage PASS                          = True
+
+State / transition integrity
+----------------------------
+operator stack shape                  = (666, 4096)
+state rows                            = 666
+labels exact                          = True
+shape exact                           = True
+frozen transitions                    = 664
+expected transitions                  = 664
+transition count exact                = True
+range mapping exact                   = True
+
+Frozen B50.6 controls
+---------------------
+controls per transition               = 20
+control identity exact                = True
+first / last transition               = 1 / 664
+
+Frozen B50.4 representation
+---------------------------
+dimensions                            = [66, 96, 119, 128, 162]
+graph k                               = [10, 20, 30]
+diffusion modes                       = 8
+channels                              = ['speed', 'acceleration', 'turn_change', 'density_scale_change', 'diffusion_step']
+
+Mechanism gates
+---------------
+Holm alpha across five channels       = 0.05
+channel |effect| floor                = 0.03
+LOO material attenuation floor        = 0.25
+randomization replicates              = 5000
+protocol modified                     = False
+
+PLAN PASS                             = True
+
+Interpretation
+--------------
+B50.10 does not search for new controls and does not retune the B50.6 effect.
+It decomposes the frozen replicated effect into raw channels, leave-one-out
+composites, and directional geometry.

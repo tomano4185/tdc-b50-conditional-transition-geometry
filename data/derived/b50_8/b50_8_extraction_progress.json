@@ -1,0 +1,20 @@
+{
+  "version": "B50.8_multi_offset_phase_robustness_effect_invariance_v1",
+  "updated": "2026-09-08 06:00:13",
+  "execution_offsets": [
+    125
+  ],
+  "rows": [
+    {
+      "offset": 125,
+      "complete": true,
+      "operator_stack_shape": [
+        665,
+        4096
+      ],
+      "stack_path": "d:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p125\\b50_7_offset_operator_stack.npz",
+      "manifest_path": "d:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p125\\b50_7_extraction_manifest.json"
+    }
+  ],
+  "all_execution_offsets_complete": true
+}

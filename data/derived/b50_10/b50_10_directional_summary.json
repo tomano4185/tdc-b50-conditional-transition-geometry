@@ -1,0 +1,17 @@
+{
+  "n_transitions": 664,
+  "observed_mean_percentile": 0.5579066265060241,
+  "observed_median_percentile": 0.55,
+  "observed_mean_effect": 0.05790662650602407,
+  "null_mean_effect": -1.774096385542202e-05,
+  "null_sd_effect": 0.01167698026400224,
+  "p_lower": 1.0,
+  "p_upper": 0.0001999600079984003,
+  "p_two_sided": 0.0001999600079984003,
+  "median_physical_cosine": -0.4655907708923661,
+  "median_control_cosine": -0.4865906084275249,
+  "mean_physical_minus_control_cosine": 0.02167430639773301,
+  "median_physical_minus_control_cosine": 0.010621142806250816,
+  "directional_positive_gate": true,
+  "role": "secondary diagnostic; algebraically related to turn_change = 1 - cosine"
+}

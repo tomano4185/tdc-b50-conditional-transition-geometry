@@ -1,0 +1,72 @@
+{
+  "version": "B50.6_physical_adjacency_specificity_replication_v1",
+  "created": "2026-08-26 06:54:42",
+  "outcome_blind_to_b59": true,
+  "inputs": {
+    "operator_stack": {
+      "path": "d:\\hpc_project\\tdc_unified_core\\results\\b50_2_dimensionality\\b50_2_operator_stack.npz",
+      "sha256": "6d1b74772b70e7a9dbdd8b099c6306ae7ae2f7921176457f1d148f6b2340546a"
+    },
+    "b50_2_summary": {
+      "path": "d:\\hpc_project\\tdc_unified_core\\results\\b50_2_dimensionality\\b50_2_summary.json",
+      "sha256": "ce064449332b72d5d1a702b96c8db7eef7c62e6e570c1012dd6f6da56fbe158d"
+    },
+    "b50_4_protocol": {
+      "path": "d:\\hpc_project\\tdc_unified_core\\results\\b50_4_continuous_dynamics\\b50_4_protocol_manifest.json",
+      "sha256": "6b1aae4ca73d7f779a6885647d1198f4c1d17cbe5dbd76b0beb1e52b2fd75573"
+    },
+    "b50_4_summary": {
+      "path": "d:\\hpc_project\\tdc_unified_core\\results\\b50_4_continuous_dynamics\\b50_4_summary.json",
+      "sha256": "2c9f0a823674b4b89a7cb4432d42c54af3023e1d6c97b2cf0464508a4c29688a"
+    },
+    "b50_4_front_features": {
+      "path": "d:\\hpc_project\\tdc_unified_core\\results\\b50_4_continuous_dynamics\\b50_4_front_features_long.csv",
+      "sha256": "b5783dd9f02d1983f01a5fef5689ce46a7f6ea1b9e99a89a0fe089fc6feca8e3"
+    },
+    "b50_5_summary": {
+      "path": "d:\\hpc_project\\tdc_unified_core\\results\\b50_5_front_validation\\b50_5_summary.json",
+      "sha256": "4fc0ca5c0fcd616e07940c926c788844aed69a211f239ed3c634c865a04315b7"
+    },
+    "state_dataset": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b59_1a_global_physical_order\\b51_global_physical_order\\B51_hpc_selected_20260817_223017_seed_59101\\stages\\b50\\b50_state_dataset.csv",
+      "sha256": "bc19fc63f38c264bc22b72780a55d1a643c56e34678455c20b34c85b7da53eab"
+    },
+    "b50_4_script": {
+      "path": "d:\\hpc_project\\tdc_unified_core\\scripts\\tdc_tor_a_b50_4_continuous_state_geometry_slow_mode_dynamics_audit.py",
+      "sha256": "24da4d88d999802764976b92c06bc4432bce3b1f965d80df05d2843d7c3b99c6"
+    }
+  },
+  "frozen_b50_4": {
+    "dimensions": [
+      66,
+      96,
+      119,
+      128,
+      162
+    ],
+    "graph_k_values": [
+      10,
+      20,
+      30
+    ],
+    "diffusion_modes": 8
+  },
+  "matching": {
+    "geometry": "full 4096D B50 operator Euclidean",
+    "controls_per_transition": 20,
+    "min_index_separation": 10
+  },
+  "randomization_replicates": 5000,
+  "thresholds": {
+    "match_median_max": 0.1,
+    "match_q90_max": 0.25,
+    "primary_p_max": 0.01,
+    "primary_abs_effect_min": 0.05,
+    "config_direction_agreement_min": 0.8,
+    "third_p_max": 0.05,
+    "third_abs_effect_min": 0.04,
+    "third_same_direction_required": 3,
+    "third_nominal_required": 2
+  },
+  "seed": 50606
+}

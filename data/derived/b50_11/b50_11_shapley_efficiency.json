@@ -1,0 +1,8 @@
+{
+  "sum_shapley": -0.05911144578313254,
+  "full_effect": -0.059111445783132543,
+  "abs_efficiency_error": 6.938893903907228e-18,
+  "efficiency_pass": true,
+  "top2_absolute_share": 0.7459353776497222,
+  "top2_concentrated": false
+}

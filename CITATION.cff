@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the archived release or associated paper."
+title: "B50 Conditional Transition-Geometry Specificity — Reproducibility Repository"
+type: software
+authors:
+  - family-names: "Tomanek"
+    given-names: "Pawel"
+
+    orcid: "https://orcid.org/0009-0000-1952-8508"
+    email: "contact@infinity88labs.com"
+
+
+keywords:
+  - prime gaps
+  - transition operators
+  - conditional geometry
+  - reproducibility
+  - falsification

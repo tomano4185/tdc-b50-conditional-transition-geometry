@@ -1,0 +1,16 @@
+﻿{
+    "schema":  "tdc.b50.public_source_export.v1",
+    "generated":  "2026-10-07T13:05:24.8205556+02:00",
+    "source_dir":  "source working tree / scripts",
+    "destination_root":  ".",
+    "code_dir":  "code",
+    "files_copied":  19,
+    "frozen_original_source":  "tdc_tor_a_b50_predictive_jump_forecasting.py",
+    "frozen_original_sha256":  "655d0e27e9d5e6373e9815b52bb49aa470a7d2ba5815a1590b68984fc354285d",
+    "frozen_original_hash_pass":  true,
+    "missing_required_stages":  [
+
+                                ],
+    "public_github_ready":  true,
+    "scope_filter":  "public B50/publication lineage allowlist applied"
+}

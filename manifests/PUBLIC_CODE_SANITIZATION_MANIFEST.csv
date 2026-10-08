@@ -1,0 +1,2 @@
+﻿"Schema","File","Transformation","ScientificLogicChanged","CanonicalSourceModified","CanonicalSourceSHA256","PublicCopySHA256","ReplacementCount","Status"
+"tdc.b50.public_code_sanitization.v1","code\pub003_build_publication_assets.py","PUBLICATION_SCOPE_TEXT_LABEL_ONLY","False","False","68082ef321ec2b3a2b00a6c829c3abf17f26fcf13734aca6110f2603b957e80a","6ead81a7edcef86361e6081700c8bafda7bcc5b8fac2ca0b10cf774d521978b0","1","PASS_CONTROLLED_PUBLIC_COPY_SANITIZATION"

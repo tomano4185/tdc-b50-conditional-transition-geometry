@@ -1,0 +1,55 @@
+{
+  "version": "B50.12_frozen_pair_core_cross_offset_replication_v1_1_import_fix",
+  "finished": "2026-09-08 14:01:24",
+  "offset": 100,
+  "input_fingerprint": "7a6e5b20baa843a78faf6e31679bb7ed52bb9867a9c1870df3e3ba9057d05511",
+  "technical_valid": true,
+  "integrity": {
+    "applied_offset_exact": true,
+    "external_labels_exact": true,
+    "operator_dim_exact": true,
+    "extraction_labels_exact": true,
+    "saved_subrun_not_invalid": true,
+    "pass": true
+  },
+  "control_identity": {
+    "transition_count": 663,
+    "controls_per_transition": 20,
+    "exact_identity_between_outputs": true
+  },
+  "full_reproduction": {
+    "pca_parity_pass": true,
+    "max_consensus_physical_percentile_error": 0.0,
+    "reconstructed_full_effect": -0.06595022624434393,
+    "saved_b50_7_full_effect": -0.06595022624434393,
+    "effect_abs_error": 0.0,
+    "pass": true
+  },
+  "pair_core": {
+    "channels": [
+      "turn_change",
+      "density_scale_change"
+    ],
+    "n_transitions": 663,
+    "observed_mean_percentile": 0.43929110105580693,
+    "observed_median_percentile": 0.4,
+    "observed_mean_effect": -0.06070889894419307,
+    "null_mean_effect": -0.0007260784313725452,
+    "null_sd_effect": 0.011167259973057689,
+    "p_lower": 0.0001999600079984003,
+    "p_upper": 1.0,
+    "p_two_sided": 0.0001999600079984003,
+    "effect_retention_vs_b50_11_offset0_pair": 1.066420870342439,
+    "negative_direction": true
+  },
+  "config_convergence": {
+    "negative_effect_fraction": 1.0,
+    "pass": true
+  },
+  "thirds_robustness": {
+    "negative_thirds": 3,
+    "nominally_replicated_thirds": 3,
+    "pass": true
+  },
+  "final_status": "VALID_PAIR_CORE_OFFSET_RESULT"
+}

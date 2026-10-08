@@ -1,0 +1,13 @@
+{
+  "b50_6_full_effect": -0.059111445783132543,
+  "b50_6_primary_p": 0.0001999600079984003,
+  "b50_7_plus75_full_effect": -0.05094268476621422,
+  "b50_11_pair_effect_offset0": -0.0569277108433735,
+  "b50_11_pair_retention": 0.9630573248407642,
+  "b50_11_pair_holm_p": 0.0061987602479504,
+  "b50_12_pair_mean_effect": -0.05081834123825618,
+  "b50_12_pair_median_effect": -0.05380271084337346,
+  "b50_12_negative_offsets": 5,
+  "b50_12_nominal_offsets": 4,
+  "b50_12_thirds_pass_offsets": 4
+}

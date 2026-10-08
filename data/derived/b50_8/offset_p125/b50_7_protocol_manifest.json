@@ -1,0 +1,54 @@
+{
+  "version": "B50.7_external_offset_window_adjacency_replication_v1",
+  "created": "2026-09-08 06:01:43",
+  "outcome_blind_to_b59": true,
+  "replication_target": {
+    "source": "d:\\hpc_project\\tdc_unified_core\\results\\b50_6_adjacency_specificity\\b50_6_summary.json",
+    "source_sha256": "41a61e299782b520c7cecca73826465ef5fe0f47c0a8c98ac712f42cf55f22c9",
+    "b50_6_effect": -0.059111445783132543,
+    "frozen_direction": "negative"
+  },
+  "window_plan": {
+    "offset_segments": 125,
+    "window_length": 200,
+    "offset_window_count": 665,
+    "same_underlying_prime_corpus": true,
+    "identical_original_windows": 0
+  },
+  "representation": {
+    "training_pca_basis_frozen_from_original_stack": true,
+    "dimensions": [
+      66,
+      96,
+      119,
+      128,
+      162
+    ],
+    "graph_k_values": [
+      10,
+      20,
+      30
+    ],
+    "diffusion_modes": 8,
+    "front_channel_scaling_frozen_from_original_b50_4": true
+  },
+  "matching": {
+    "controls_per_transition": 20,
+    "min_index_separation": 10,
+    "geometry": "external full 4096D operator Euclidean"
+  },
+  "randomization_replicates": 5000,
+  "thresholds": {
+    "matching_median_abs_log_distance_error_max": 0.1,
+    "matching_q90_abs_log_distance_error_max": 0.25,
+    "primary_effect_max": -0.05,
+    "primary_p_lower_max": 0.01,
+    "config_negative_fraction_min": 0.8,
+    "third_effect_max": -0.04,
+    "third_p_lower_max": 0.05,
+    "third_negative_required": 3,
+    "third_nominal_required": 2
+  },
+  "seed": 54844,
+  "scientific_boundary": "Out-of-sample offset-window replication on the same underlying prime corpus; not independent-corpus replication."
+}

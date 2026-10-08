@@ -1,0 +1,53 @@
+B50.11 — Channel Redundancy & Interaction Audit / PLAN
+=====================================================
+
+Frozen lineage
+--------------
+B50.10 verdict                      = CHANNEL_ASSOCIATION_WITHOUT_SCORE_LOCALIZATION
+B50.10 expected verdict             = CHANNEL_ASSOCIATION_WITHOUT_SCORE_LOCALIZATION
+B50.6 verdict                       = PHYSICAL_ADJACENCY_SPECIFICITY_REPLICATED
+full B50 effect                     = -0.059111445783132543
+B50.10 mechanism-cube hash exact    = True
+lineage PASS                        = True
+
+Mechanism cube
+--------------
+transitions                         = 664
+configurations                      = 15
+candidates / transition             = 21
+controls / transition               = 20
+raw cube shape                      = [664, 15, 21, 5]
+cube integrity PASS                 = True
+
+Frozen exhaustive family
+------------------------
+channels                            = ['speed', 'acceleration', 'turn_change', 'density_scale_change', 'diffusion_step']
+non-empty subsets                   = 31
+expected                            = 31
+empty-coalition effect              = 0.0
+
+Subset sufficiency gate
+-----------------------
+same sign as full                   = required
+|effect| retention                  >= 0.9
+Holm directional p                  <= 0.05
+Holm family                         = all 31 subsets
+
+Shapley
+-------
+characteristic function             = centered matched-percentile effect
+empty coalition                     = 0.0
+efficiency tolerance                = 1e-12
+
+Randomization
+-------------
+replicates / subset                 = 5000
+seed                                = 501011
+protocol modified                   = False
+
+PLAN PASS                           = True
+
+Interpretation
+--------------
+B50.11 will evaluate all 31 channel subsets. There is no adaptive subset
+selection and no new control matching.

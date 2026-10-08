@@ -1,0 +1,2 @@
+transitions,mean_physical_percentile,mean_effect,p_lower,p_two_sided,matching_median_abs_log_error,matching_q90_abs_log_error,verdict
+664,0.44088855421686746,-0.059111445783132543,,0.0001999600079984003,,,PHYSICAL_ADJACENCY_SPECIFICITY_REPLICATED

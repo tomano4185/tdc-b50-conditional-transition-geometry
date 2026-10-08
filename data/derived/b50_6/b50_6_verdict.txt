@@ -1,0 +1,58 @@
+B50.6 — Physical Adjacency Specificity Replication
+=======================================================
+
+Integrity
+---------
+operator stack shape                 = (666, 4096)
+labels exact                         = True
+B50.2 reproduction OK                = True
+B50.4 integrity OK                   = True
+B50.5 reproduction OK                = True
+frozen B50.4 reproduction PASS       = True
+arbitrary-pair raw feature parity    = True
+
+Matched-control protocol
+------------------------
+physical source transitions used     = 664
+controls per transition              = 20
+minimum index separation             = 10
+matching geometry                    = full 4096D B50 operator Euclidean
+median |log-distance match error|    = 0.002613099351567616
+q90 |log-distance match error|       = 0.020902660793912262
+MATCHING PASS                        = True
+
+Primary matched adjacency specificity
+-------------------------------------
+mean physical percentile             = 0.44088855421686746
+median physical percentile           = 0.4
+mean percentile effect vs 0.5        = -0.059111445783132543
+matched identity p_two_sided         = 0.0001999600079984003
+PRIMARY PASS                         = True
+
+Configuration convergence
+-------------------------
+direction agreement fraction         = 1.0
+CONFIG CONVERGENCE PASS              = True
+
+Internal replication across thirds
+----------------------------------
+same-direction thirds                = 3/3
+nominally replicated thirds          = 3/3
+THIRDS REPLICATION PASS              = True
+
+ third  transition_count  first_transition_index  last_transition_index  n_transitions  observed_mean_percentile  observed_median_percentile  observed_mean_effect  null_mean_effect  null_sd_effect  p_two_sided  same_direction_as_full  nominal_replication_pass
+     1               221                       1                    221            221                  0.434050                         0.4             -0.065950         -0.001739        0.019797     0.001400                    True                      True
+     2               221                     222                    442            221                  0.448077                         0.4             -0.051923         -0.001036        0.019964     0.007399                    True                      True
+     3               222                     443                    664            222                  0.440541                         0.4             -0.059459         -0.000949        0.019853     0.002799                    True                      True
+
+FINAL VERDICT: PHYSICAL_ADJACENCY_SPECIFICITY_REPLICATED
+
+REASON:
+Matched physical adjacency is specific beyond distance-matched non-adjacent controls, converges across frozen configurations, and internally replicates across all three contiguous strata.
+
+Interpretation boundary
+-----------------------
+This is an internal matched adjacency-specificity replication on the existing
+666-state sequence. It is not an external replication on new prime windows.
+No B59/B59.1 selector or predictive outcome is used.
+No individual-prime prediction, RH, or theorem claim is made.

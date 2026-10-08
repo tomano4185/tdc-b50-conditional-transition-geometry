@@ -1,0 +1,124 @@
+{
+  "version": "B50.7_external_offset_window_adjacency_replication_v1",
+  "finished": "2026-09-08 06:02:03",
+  "outcome_blind_to_b59": true,
+  "integrity": {
+    "offset_novelty_pass": true,
+    "external_labels_exact": true,
+    "operator_dim_exact": true,
+    "frozen_pca_projection_parity": {
+      "max_abs_error": 1.0380585280245214e-14,
+      "mean_abs_error": 2.60287097413711e-16,
+      "min_component_spearman": 1.0,
+      "pass": true
+    },
+    "external_raw_feature_parity_ok": true
+  },
+  "replication_target": {
+    "b50_6_final_verdict": "PHYSICAL_ADJACENCY_SPECIFICITY_REPLICATED",
+    "b50_6_effect": -0.059111445783132543,
+    "frozen_direction": "negative"
+  },
+  "offset_sequence": {
+    "window_count": 665,
+    "transition_sources_used": 663,
+    "offset_segments": 125,
+    "window_length": 200,
+    "identical_original_window_count": 0,
+    "same_underlying_prime_corpus": true
+  },
+  "matching": {
+    "controls_per_transition": 20,
+    "min_index_separation": 10,
+    "median_abs_log_distance_error": 0.0027021824759299595,
+    "q90_abs_log_distance_error": 0.02250491038013492,
+    "pass": true
+  },
+  "primary_replication": {
+    "n_transitions": 663,
+    "observed_mean_percentile": 0.45030165912518855,
+    "observed_median_percentile": 0.45,
+    "observed_mean_effect": -0.04969834087481145,
+    "null_mean_effect": -0.00011419306184011561,
+    "null_sd_effect": 0.011464525634528877,
+    "p_lower": 0.0001999600079984003,
+    "p_two_sided_diagnostic": 0.0001999600079984003,
+    "pass": false,
+    "b50_6_reference_effect": -0.059111445783132543,
+    "effect_difference_vs_b50_6": 0.00941310490832109,
+    "effect_ratio_vs_b50_6": 0.8407566456273834
+  },
+  "config_convergence": {
+    "negative_effect_fraction": 1.0,
+    "pass": true
+  },
+  "thirds_robustness": {
+    "negative_thirds": 3,
+    "nominally_replicated_thirds": 2,
+    "pass": true,
+    "rows": [
+      {
+        "third": 1,
+        "transition_count": 221,
+        "first_transition_index": 1,
+        "last_transition_index": 221,
+        "n_transitions": 221,
+        "observed_mean_percentile": 0.4677601809954751,
+        "observed_median_percentile": 0.45,
+        "observed_mean_effect": -0.03223981900452488,
+        "null_mean_effect": -0.0005833257918552066,
+        "null_sd_effect": 0.020148314140873775,
+        "p_lower": 0.0619876024795041,
+        "p_two_sided_diagnostic": 0.11437712457508498,
+        "negative_direction": true,
+        "nominal_replication_pass": false
+      },
+      {
+        "third": 2,
+        "transition_count": 221,
+        "first_transition_index": 222,
+        "last_transition_index": 442,
+        "n_transitions": 221,
+        "observed_mean_percentile": 0.44468325791855207,
+        "observed_median_percentile": 0.4,
+        "observed_mean_effect": -0.055316742081447934,
+        "null_mean_effect": 0.00022486425339366547,
+        "null_sd_effect": 0.019734289327515062,
+        "p_lower": 0.002599480103979204,
+        "p_two_sided_diagnostic": 0.005198960207958408,
+        "negative_direction": true,
+        "nominal_replication_pass": true
+      },
+      {
+        "third": 3,
+        "transition_count": 221,
+        "first_transition_index": 443,
+        "last_transition_index": 663,
+        "n_transitions": 221,
+        "observed_mean_percentile": 0.4384615384615385,
+        "observed_median_percentile": 0.45,
+        "observed_mean_effect": -0.061538461538461486,
+        "null_mean_effect": -0.00021828054298641902,
+        "null_sd_effect": 0.020026733173750023,
+        "p_lower": 0.0007998400319936012,
+        "p_two_sided_diagnostic": 0.001799640071985603,
+        "negative_direction": true,
+        "nominal_replication_pass": true
+      }
+    ]
+  },
+  "thresholds": {
+    "matching_median_abs_log_distance_error_max": 0.1,
+    "matching_q90_abs_log_distance_error_max": 0.25,
+    "primary_effect_max": -0.05,
+    "primary_p_lower_max": 0.01,
+    "config_negative_fraction_min": 0.8,
+    "third_effect_max": -0.04,
+    "third_p_lower_max": 0.05,
+    "third_negative_required": 3,
+    "third_nominal_required": 2
+  },
+  "final_verdict": "OFFSET_REPLICATION_NULL_COMPATIBLE",
+  "final_reason": "The offset-window physical percentile is not sufficiently displaced from matched non-adjacent controls under the frozen directional replication test.",
+  "scientific_boundary": "Out-of-sample offset-window replication on new states from the same underlying prime corpus. Not independent-corpus replication, not B59 validation, not individual-prime prediction, and not a theorem."
+}

@@ -1,0 +1,12 @@
+{
+  "available": true,
+  "minimal_size": 2,
+  "minimal_count": 1,
+  "minimal_subset_keys": [
+    "turn_change+density_scale_change"
+  ],
+  "best_minimal_subset": "turn_change+density_scale_change",
+  "best_minimal_retention": 0.9630573248407642,
+  "best_minimal_effect": -0.0569277108433735,
+  "best_minimal_holm_directional_p": 0.0061987602479504095
+}

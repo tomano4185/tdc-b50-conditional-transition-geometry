@@ -1,0 +1,152 @@
+{
+  "version": "B50.10_conditional_transition_geometry_mechanism_audit_v1",
+  "created": "2026-09-08 12:09:54",
+  "scientific_role": "mechanism/decomposition audit of replicated B50 adjacency specificity",
+  "lineage": {
+    "b50_6_verdict": "PHYSICAL_ADJACENCY_SPECIFICITY_REPLICATED",
+    "b50_7_verdict": "EXTERNAL_OFFSET_ADJACENCY_SPECIFICITY_REPLICATED",
+    "b50_8_verdict": "MULTI_OFFSET_PHASE_ROBUST_EFFECT_INVARIANCE",
+    "b50_6_ok": true,
+    "b50_7_ok": true,
+    "b50_8_ok": true,
+    "b50_6_effect": -0.059111445783132543,
+    "b50_7_effect": -0.05094268476621422,
+    "b50_8_mean_effect": -0.05027885864725873,
+    "negative_reference_direction_ok": true,
+    "pass": true
+  },
+  "inputs": {
+    "operator_stack": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_2_dimensionality\\b50_2_operator_stack.npz",
+      "sha256": "6d1b74772b70e7a9dbdd8b099c6306ae7ae2f7921176457f1d148f6b2340546a"
+    },
+    "state_dataset": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b59_1a_global_physical_order\\b51_global_physical_order\\B51_hpc_selected_20260817_223017_seed_59101\\stages\\b50\\b50_state_dataset.csv",
+      "sha256": "bc19fc63f38c264bc22b72780a55d1a643c56e34678455c20b34c85b7da53eab"
+    },
+    "b50_4_script": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\scripts\\tdc_tor_a_b50_4_continuous_state_geometry_slow_mode_dynamics_audit.py",
+      "sha256": "24da4d88d999802764976b92c06bc4432bce3b1f965d80df05d2843d7c3b99c6"
+    },
+    "b50_4_protocol": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_4_continuous_dynamics\\b50_4_protocol_manifest.json",
+      "sha256": "6b1aae4ca73d7f779a6885647d1198f4c1d17cbe5dbd76b0beb1e52b2fd75573"
+    },
+    "b50_4_front_features": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_4_continuous_dynamics\\b50_4_front_features_long.csv",
+      "sha256": "b5783dd9f02d1983f01a5fef5689ce46a7f6ea1b9e99a89a0fe089fc6feca8e3"
+    },
+    "b50_6_summary": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_6_adjacency_specificity\\b50_6_summary.json",
+      "sha256": "41a61e299782b520c7cecca73826465ef5fe0f47c0a8c98ac712f42cf55f22c9"
+    },
+    "b50_6_protocol": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_6_adjacency_specificity\\b50_6_protocol_manifest.json",
+      "sha256": "6f1416bcd468b512e97bec816395c6b6188e1394ba1e6aef0a1c3902e6393e5b"
+    },
+    "b50_6_transition_specificity": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_6_adjacency_specificity\\b50_6_transition_specificity.csv",
+      "sha256": "4299044c95e10351f8b50100a5b87ba37251644c757c39f2708b0518e5602e41"
+    },
+    "b50_6_matching_audit": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_6_adjacency_specificity\\b50_6_matching_audit.csv",
+      "sha256": "4f2c2cbb353582c0310e00d209f43f27f8a89623cae5043f46fece53c5c86bb6"
+    },
+    "b50_6_config_specificity": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_6_adjacency_specificity\\b50_6_config_specificity.csv",
+      "sha256": "764ff01d08a72e42884e4ef2c365a03a62804f9ac0369127987e110020f8f3d5"
+    },
+    "b50_7_summary": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_7_external_offset\\b50_7_summary.json",
+      "sha256": "6f4e0465cfacb48d74136f7de9551b070d319d07377d3853238debd1135547ed"
+    },
+    "b50_8_summary": {
+      "path": "D:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\b50_8_summary.json",
+      "sha256": "5046f4d94fe309761388d9127f31cd60f5284d87f772ddc1566b97b2f8289c8e"
+    }
+  },
+  "state_integrity": {
+    "operator_stack_shape": [
+      666,
+      4096
+    ],
+    "state_rows": 666,
+    "labels_exact": true,
+    "shape_exact": true,
+    "transition_count_expected": 664,
+    "transition_count_frozen": 664,
+    "transition_count_exact": true,
+    "range_mapping_exact": true
+  },
+  "frozen_controls": {
+    "transition_count": 664,
+    "controls_per_transition": 20,
+    "transition_first": 1,
+    "transition_last": 664,
+    "control_identity_exact": true
+  },
+  "frozen_b50_4": {
+    "dimensions": [
+      66,
+      96,
+      119,
+      128,
+      162
+    ],
+    "graph_k_values": [
+      10,
+      20,
+      30
+    ],
+    "diffusion_modes": 8,
+    "channels": [
+      "speed",
+      "acceleration",
+      "turn_change",
+      "density_scale_change",
+      "diffusion_step"
+    ]
+  },
+  "primary_channel_protocol": {
+    "statistic": "mean consensus physical percentile minus 0.5, separately for each raw B50.4 channel",
+    "null": "matched-set identity randomization using the exact 20 B50.6 control destinations per transition",
+    "multiplicity": "Holm correction across the five channels",
+    "association_gate": {
+      "holm_p_max": 0.05,
+      "abs_effect_min": 0.03
+    }
+  },
+  "leave_one_out_protocol": {
+    "score": "exact B50.6 positive robust-z RMS composite with one channel removed",
+    "material_attenuation_min": 0.25,
+    "role": "score-localization diagnostic; not causal attribution"
+  },
+  "directional_protocol": {
+    "cosine": "cos(previous physical vector, candidate vector)",
+    "physical_positive_direction": "higher cosine percentile than matched controls",
+    "role": "secondary algebraically related diagnostic to turn_change=1-cosine"
+  },
+  "thirds_protocol": {
+    "split": "three contiguous transition strata",
+    "role": "secondary channel stability diagnostic"
+  },
+  "randomization_replicates": 5000,
+  "seed": 501010,
+  "thresholds": {
+    "full_score_max_abs_error": 1e-08,
+    "full_percentile_max_abs_error": 1e-12,
+    "full_effect_max_abs_error": 1e-12,
+    "channel_holm_alpha": 0.05,
+    "channel_abs_effect_min": 0.03,
+    "loo_material_attenuation_min": 0.25,
+    "third_nominal_p_max": 0.05,
+    "third_abs_effect_min": 0.025,
+    "third_same_direction_required": 3,
+    "third_nominal_required": 2,
+    "directional_abs_effect_min": 0.03,
+    "directional_p_max": 0.01
+  },
+  "protocol_modified": false,
+  "plan_pass": true,
+  "scientific_boundary": "Same-source mechanism decomposition using exact B50.6 controls. Not independent-corpus replication, not B59 validation, not individual-prime prediction, and not theorem/RH evidence."
+}

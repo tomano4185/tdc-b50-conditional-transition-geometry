@@ -1,0 +1,11 @@
+channel_i,channel_j,pair_only_synergy,global_shapley_interaction,global_interaction_abs,interaction_sign,material_interaction
+turn_change,density_scale_change,0.03501506024096385,0.019920306224899615,0.019920306224899615,positive_antagonism,True
+acceleration,turn_change,0.026769578313252995,0.01575991465863455,0.01575991465863455,positive_antagonism,True
+acceleration,density_scale_change,0.026807228915662562,0.014272715863453826,0.014272715863453826,positive_antagonism,True
+turn_change,diffusion_step,0.007191265060240981,0.002682605421686745,0.002682605421686745,positive_antagonism,False
+speed,turn_change,-0.00500753012048194,-0.0019170431726907482,0.0019170431726907482,negative_synergy,False
+speed,acceleration,-0.005496987951807364,-0.0015217118473895934,0.0015217118473895934,negative_synergy,False
+density_scale_change,diffusion_step,0.00696536144578308,0.0009883283132529892,0.0009883283132529892,positive_antagonism,False
+speed,density_scale_change,-0.0013554216867470714,0.0008879267068272836,0.0008879267068272836,positive_antagonism,False
+speed,diffusion_step,-0.0045557228915663606,-0.0008753765060241318,0.0008753765060241318,negative_synergy,False
+acceleration,diffusion_step,0.0015813253012048056,-0.00034826807228915025,0.00034826807228915025,negative_synergy,False

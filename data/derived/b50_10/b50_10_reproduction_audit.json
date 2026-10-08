@@ -1,0 +1,10 @@
+{
+  "pass": true,
+  "max_abs_physical_front_score_error": 2.609024107869118e-14,
+  "mean_abs_physical_front_score_error": 7.505866484699488e-16,
+  "max_abs_consensus_physical_percentile_error": 0.0,
+  "mean_abs_consensus_physical_percentile_error": 0.0,
+  "reconstructed_full_effect": -0.059111445783132543,
+  "frozen_b50_6_full_effect": -0.059111445783132543,
+  "full_effect_abs_error": 0.0
+}

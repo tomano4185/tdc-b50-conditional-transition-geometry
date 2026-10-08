@@ -1,0 +1,32 @@
+﻿{
+    "schema":  "tdc.b50.publicgithub003.verdict.v2",
+    "generated":  "2026-10-08T17:16:05.5670148+02:00",
+    "stage":  "PublicGitHub-003",
+    "status":  "PUBLICGITHUB_003_REPOSITORY_METADATA_AND_REPRODUCIBILITY_FROZEN",
+    "publicgithub001_pass":  true,
+    "publicgithub002_pass":  true,
+    "frozen_scientific_outputs_modified":  false,
+    "bibliography_source_bound":  true,
+    "publication_metadata_complete":  true,
+    "citation_cff_ready":  true,
+    "license_ready":  true,
+    "license_policy":  "MIT_CODE_PLUS_CC_BY_4_0_NONCODE",
+    "technical_preidentity_pass":  true,
+    "private_firewall_pass":  true,
+    "local_absolute_path_audit_pass":  true,
+    "frozen_provenance_absolute_paths_allowed":  true,
+    "frozen_provenance_path_findings":  10,
+    "frozen_provenance_bytes_modified":  false,
+    "frozen_provenance_path_audit":  "manifests/FROZEN_PROVENANCE_PATH_AUDIT.csv",
+    "required_public_files_complete":  true,
+    "repository_file_count_in_manifest":  3588,
+    "github_zenodo_identifiers_present":  false,
+    "ready_for_first_public_push":  true,
+    "ready_for_doi_archival_release":  false,
+    "blockers":  [
+
+                 ],
+    "final_manifest":  "manifests/FINAL_REPOSITORY_MANIFEST.csv",
+    "sha256_inventory":  "manifests/SHA256SUMS_REPOSITORY.txt",
+    "next_action":  "VERIFY_REPOSITORY_THEN_GIT_FREEZE_AND_FIRST_PUSH"
+}

@@ -1,0 +1,124 @@
+{
+  "version": "B50.7_external_offset_window_adjacency_replication_v1",
+  "finished": "2026-09-08 06:01:41",
+  "outcome_blind_to_b59": true,
+  "integrity": {
+    "offset_novelty_pass": true,
+    "external_labels_exact": true,
+    "operator_dim_exact": true,
+    "frozen_pca_projection_parity": {
+      "max_abs_error": 1.0380585280245214e-14,
+      "mean_abs_error": 2.60287097413711e-16,
+      "min_component_spearman": 1.0,
+      "pass": true
+    },
+    "external_raw_feature_parity_ok": true
+  },
+  "replication_target": {
+    "b50_6_final_verdict": "PHYSICAL_ADJACENCY_SPECIFICITY_REPLICATED",
+    "b50_6_effect": -0.059111445783132543,
+    "frozen_direction": "negative"
+  },
+  "offset_sequence": {
+    "window_count": 665,
+    "transition_sources_used": 663,
+    "offset_segments": 100,
+    "window_length": 200,
+    "identical_original_window_count": 0,
+    "same_underlying_prime_corpus": true
+  },
+  "matching": {
+    "controls_per_transition": 20,
+    "min_index_separation": 10,
+    "median_abs_log_distance_error": 0.002749992811556079,
+    "q90_abs_log_distance_error": 0.026778739103451302,
+    "pass": true
+  },
+  "primary_replication": {
+    "n_transitions": 663,
+    "observed_mean_percentile": 0.43404977375565607,
+    "observed_median_percentile": 0.4,
+    "observed_mean_effect": -0.06595022624434393,
+    "null_mean_effect": -0.000343687782805429,
+    "null_sd_effect": 0.011422662765768008,
+    "p_lower": 0.0001999600079984003,
+    "p_two_sided_diagnostic": 0.0001999600079984003,
+    "pass": true,
+    "b50_6_reference_effect": -0.059111445783132543,
+    "effect_difference_vs_b50_6": -0.006838780461211391,
+    "effect_ratio_vs_b50_6": 1.1156929993947609
+  },
+  "config_convergence": {
+    "negative_effect_fraction": 1.0,
+    "pass": true
+  },
+  "thirds_robustness": {
+    "negative_thirds": 3,
+    "nominally_replicated_thirds": 3,
+    "pass": true,
+    "rows": [
+      {
+        "third": 1,
+        "transition_count": 221,
+        "first_transition_index": 1,
+        "last_transition_index": 221,
+        "n_transitions": 221,
+        "observed_mean_percentile": 0.4319004524886878,
+        "observed_median_percentile": 0.4,
+        "observed_mean_effect": -0.0680995475113122,
+        "null_mean_effect": -0.0005818099547511299,
+        "null_sd_effect": 0.019554780513019017,
+        "p_lower": 0.0001999600079984003,
+        "p_two_sided_diagnostic": 0.0003999200159968006,
+        "negative_direction": true,
+        "nominal_replication_pass": true
+      },
+      {
+        "third": 2,
+        "transition_count": 221,
+        "first_transition_index": 222,
+        "last_transition_index": 442,
+        "n_transitions": 221,
+        "observed_mean_percentile": 0.43914027149321266,
+        "observed_median_percentile": 0.4,
+        "observed_mean_effect": -0.060859728506787336,
+        "null_mean_effect": -0.000649162895927604,
+        "null_sd_effect": 0.019669228717930046,
+        "p_lower": 0.0009998000399920016,
+        "p_two_sided_diagnostic": 0.0015996800639872025,
+        "negative_direction": true,
+        "nominal_replication_pass": true
+      },
+      {
+        "third": 3,
+        "transition_count": 221,
+        "first_transition_index": 443,
+        "last_transition_index": 663,
+        "n_transitions": 221,
+        "observed_mean_percentile": 0.43110859728506784,
+        "observed_median_percentile": 0.4,
+        "observed_mean_effect": -0.06889140271493216,
+        "null_mean_effect": -0.0009809049773755617,
+        "null_sd_effect": 0.019933956178000683,
+        "p_lower": 0.0003999200159968006,
+        "p_two_sided_diagnostic": 0.0009998000399920016,
+        "negative_direction": true,
+        "nominal_replication_pass": true
+      }
+    ]
+  },
+  "thresholds": {
+    "matching_median_abs_log_distance_error_max": 0.1,
+    "matching_q90_abs_log_distance_error_max": 0.25,
+    "primary_effect_max": -0.05,
+    "primary_p_lower_max": 0.01,
+    "config_negative_fraction_min": 0.8,
+    "third_effect_max": -0.04,
+    "third_p_lower_max": 0.05,
+    "third_negative_required": 3,
+    "third_nominal_required": 2
+  },
+  "final_verdict": "EXTERNAL_OFFSET_ADJACENCY_SPECIFICITY_REPLICATED",
+  "final_reason": "The frozen negative physical-adjacency effect replicates on new offset-window states, passes matched identity randomization, converges across frozen representations, and is robust across all three offset-sequence thirds.",
+  "scientific_boundary": "Out-of-sample offset-window replication on new states from the same underlying prime corpus. Not independent-corpus replication, not B59 validation, not individual-prime prediction, and not a theorem."
+}

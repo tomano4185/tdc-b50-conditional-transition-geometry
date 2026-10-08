@@ -1,0 +1,16 @@
+{
+  "version": "B50.8_multi_offset_phase_robustness_effect_invariance_v1",
+  "updated": "2026-09-08 05:58:11",
+  "completed_offsets": [
+    25,
+    50,
+    100,
+    125
+  ],
+  "requested_execution_offsets": [
+    25,
+    50,
+    100,
+    125
+  ]
+}

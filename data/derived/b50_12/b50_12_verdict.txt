@@ -1,0 +1,114 @@
+B50.12 — Frozen Pair-Core Cross-Offset Replication
+==================================================
+
+Interpretation scope
+--------------------
+Frozen pair selected in B50.11: YES
+Pair reselection in B50.12: NO
+Exact B50.7 matched controls reused: YES
+New control matching: NO
+New prime-data extraction: NO
+Same underlying prime corpus: YES
+Independent-corpus replication: NO
+Pristine blinded prospective test: NO
+
+Frozen pair core
+----------------
+channels                              = ['turn_change', 'density_scale_change']
+B50.11 offset-0 pair effect           = -0.0569277108433735
+B50.11 pair retention vs full         = 0.9630573248407642
+
+Technical reproduction
+----------------------
+all frozen input hashes exact         = True
+all five full B50.7 endpoints exact   = True
+max full-percentile reproduction err  = 0.0
+max full-effect reproduction err      = 0.0
+
+Per-offset pair-core results
+----------------------------
+ offset  mean_physical_percentile    effect  p_lower  p_two_sided  negative  retention_vs_b50_11_pair  negative_config_fraction  config_pass  negative_thirds  nominal_thirds  thirds_pass  full_reproduction_pass  full_reproduction_percentile_error  full_reproduction_effect_error  holm_p_lower  holm_directional_pass  nominal_offset_replication  material_positive_reversal
+     25                  0.446197 -0.053803   0.0002       0.0002      True                  0.945106                       1.0         True                3               2         True                    True                                 0.0                             0.0         0.001                   True                        True                       False
+     50                  0.466604 -0.033396   0.0020       0.0022      True                  0.586640                       1.0         True                3               1        False                    True                                 0.0                             0.0         0.002                   True                       False                       False
+     75                  0.440762 -0.059238   0.0002       0.0002      True                  1.040588                       1.0         True                3               3         True                    True                                 0.0                             0.0         0.001                   True                        True                       False
+    100                  0.439291 -0.060709   0.0002       0.0002      True                  1.066421                       1.0         True                3               3         True                    True                                 0.0                             0.0         0.001                   True                        True                       False
+    125                  0.453054 -0.046946   0.0002       0.0002      True                  0.824655                       1.0         True                3               2         True                    True                                 0.0                             0.0         0.001                   True                        True                       False
+
+Cross-offset counts
+-------------------
+negative offsets                      = 5/5
+nominal offset replications           = 4/5
+config-convergence passes             = 5/5
+thirds-robustness passes              = 4/5
+material positive reversals           = 0
+
+Effect invariance
+-----------------
+mean five-offset effect               = -0.05081834123825618
+median five-offset effect             = -0.05380271084337346
+SD five-offset effect                 = 0.011137300556333772
+IQR five-offset effect                = 0.012292609351432837
+range five-offset effect              = 0.02731281460684365
+min / max five-offset effect          = -0.06070889894419307 / -0.03339608433734942
+median |effect| retention vs B50.11   = 0.9451058201058193
+
+Frozen mandatory gates
+----------------------
+5/5 negative                          = True
+>=4/5 nominal                         = True
+  nominal effect <= -0.04
+  Holm directional p <= 0.05 over 5 offsets
+median effect <= -0.05                = True
+>=4/5 config convergence              = True
+>=4/5 thirds robustness              = True
+no material positive reversal         = True
+all technical reproduction pass       = True
+
+Secondary pooled-null diagnostic
+--------------------------------
+replicates                            = 5000
+observed mean five-offset effect      = -0.05081834123825618
+null mean                             = -0.0005503446387359331
+null SD                               = 0.005025008738383162
+p_lower                               = 0.0001999600079984003
+mandatory gate                        = False
+dependence                            = SAME CORPUS / OVERLAPPING OFFSET WINDOWS
+
+FINAL VERDICT: PAIR_CORE_CROSS_OFFSET_REPLICATED
+
+REASON:
+The frozen turn_change+density_scale_change pair remains negative at all five offset phases, at least four offsets pass the frozen amplitude plus five-test Holm directional gate, the median effect is <= -0.05, and representation/thirds robustness converges across at least four offsets.
+
+Interpretation boundary
+-----------------------
+B50.12 tests whether the B50.11-selected two-channel score survives changes of
+window phase. The pair is frozen and no controls are changed, but the five
+offset sequences are derived from the same deterministic prime corpus and
+their full five-channel outcomes existed before B50.12. The result is therefore
+a confirmatory cross-phase representation replication, not an independent
+source replication or pristine blinded prospective test.
+
+No B59 selector, individual-prime prediction, RH claim, or theorem claim is
+made.
+
+Key outputs
+-----------
+b50_12_protocol_manifest.json
+b50_12_plan.txt
+b50_12_offset_input_plan.csv
+b50_12_frozen_input_audit.csv
+b50_12_offset_effects.csv
+b50_12_pooled_null.csv
+b50_12_summary.json
+b50_12_verdict.txt
+b50_12_pair_effect_by_offset.png
+b50_12_pair_convergence_by_offset.png
+b50_12_pooled_null.png
+
+Each offset output directory also contains:
+b50_12_full_reproduction.json
+b50_12_pair_transition_specificity.csv
+b50_12_pair_config_effects.csv
+b50_12_pair_null.csv
+b50_12_pair_thirds.csv
+b50_12_offset_summary.json

@@ -1,0 +1,33 @@
+{
+  "version": "B50.7_external_offset_window_adjacency_replication_v1",
+  "created": "2026-08-26 08:05:32",
+  "original_window_count": 666,
+  "offset_window_count": 665,
+  "dropped_window_count": 1,
+  "original_nominal_step": 150,
+  "original_step_mode_fraction": 1.0,
+  "original_nominal_length": 200,
+  "original_length_mode_fraction": 1.0,
+  "default_half_step_offset": 75,
+  "applied_offset": 75,
+  "protocol_modified_from_default": false,
+  "total_segments": 100000,
+  "exact_duplicate_with_original_count": 0,
+  "labels_unique": true,
+  "starts_strictly_increasing": true,
+  "window_lengths_exact": true,
+  "offset_novelty_pass": true,
+  "dropped_windows": [
+    {
+      "original_index": 665,
+      "original_start": 99751,
+      "original_end": 99950,
+      "offset_start": 99826,
+      "offset_end": 100025,
+      "reason": "outside_total_segments"
+    }
+  ],
+  "scientific_boundary": "New offset window states from the same underlying prime corpus; not an independent-corpus replication.",
+  "state_dataset": "D:\\hpc_project\\tdc_unified_core\\results\\b59_1a_global_physical_order\\b51_global_physical_order\\B51_hpc_selected_20260817_223017_seed_59101\\stages\\b50\\b50_state_dataset.csv",
+  "state_dataset_sha256": "bc19fc63f38c264bc22b72780a55d1a643c56e34678455c20b34c85b7da53eab"
+}

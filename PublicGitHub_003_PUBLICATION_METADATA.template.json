@@ -1,0 +1,22 @@
+{
+  "schema": "tdc.b50.publication_metadata.v1",
+  "repository_title": "B50 Conditional Transition-Geometry Specificity — Reproducibility Repository",
+  "author_given_names": "",
+  "author_family_name": "",
+  "affiliation": "",
+  "orcid": "",
+  "corresponding_email": "",
+  "funding_statement": "",
+  "competing_interests_statement": "",
+  "repository_url": "",
+  "zenodo_url": "",
+  "zenodo_doi": "",
+  "license_spdx": "",
+  "keywords": [
+    "prime gaps",
+    "transition operators",
+    "conditional geometry",
+    "reproducibility",
+    "falsification"
+  ]
+}

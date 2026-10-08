@@ -1,0 +1,6 @@
+offset,input_dir,plan_applied_offset,summary_offset,b50_7_verdict,technical_lineage_valid
+25,D:\hpc_project\tdc_unified_core\results\b50_8_multi_offset\offset_p025,25,25,EXTERNAL_OFFSET_ADJACENCY_SPECIFICITY_REPLICATED,True
+50,D:\hpc_project\tdc_unified_core\results\b50_8_multi_offset\offset_p050,50,50,OFFSET_REPLICATION_NULL_COMPATIBLE,True
+75,D:\hpc_project\tdc_unified_core\results\b50_7_external_offset,75,75,EXTERNAL_OFFSET_ADJACENCY_SPECIFICITY_REPLICATED,True
+100,D:\hpc_project\tdc_unified_core\results\b50_8_multi_offset\offset_p100,100,100,EXTERNAL_OFFSET_ADJACENCY_SPECIFICITY_REPLICATED,True
+125,D:\hpc_project\tdc_unified_core\results\b50_8_multi_offset\offset_p125,125,125,OFFSET_REPLICATION_NULL_COMPATIBLE,True

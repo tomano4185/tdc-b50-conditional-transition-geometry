@@ -1,0 +1,51 @@
+B50.12 — Frozen Pair-Core Cross-Offset Replication / PLAN
+==========================================================
+
+Frozen lineage
+--------------
+B50.10 verdict                     = CHANNEL_ASSOCIATION_WITHOUT_SCORE_LOCALIZATION
+B50.11 verdict                     = PAIRWISE_CORE_RECAPTURES_FULL_EFFECT
+B50.8 verdict                      = MULTI_OFFSET_PHASE_ROBUST_EFFECT_INVARIANCE
+B50.7 +75 verdict                  = EXTERNAL_OFFSET_ADJACENCY_SPECIFICITY_REPLICATED
+lineage PASS                       = True
+
+Frozen pair core
+----------------
+channels                           = ['turn_change', 'density_scale_change']
+B50.11 offset-0 pair effect        = -0.0569277108433735
+B50.11 retention vs five-channel   = 0.9630573248407642
+reselection allowed                = False
+
+Cross-offset sample
+-------------------
+offsets                            = [25, 50, 75, 100, 125]
+all offset lineage valid           = True
+
+Frozen mandatory gates
+----------------------
+5/5 negative                       = required
+>=4/5 nominal                      = effect <= -0.04
+                                     Holm p <= 0.05
+median effect                      <= -0.05
+>=4/5 config convergence           = required
+>=4/5 thirds robustness            = required
+material positive reversal         = forbidden
+
+Technical gate
+--------------
+full B50.7 endpoint reproduction   = exact at every offset
+matched-control identity           = exact reuse at every offset
+new control matching               = forbidden
+new channel selection              = forbidden
+
+randomization replicates           = 5000
+protocol modified                  = False
+
+PLAN PASS                          = True
+protocol fingerprint               = 3d8d3543573086e6062eeb8f720645a25fbfbb8117e825ddd0a1ec807b505da9
+
+Boundary
+--------
+Same prime corpus; different window phases. Offset full-score outcomes already
+existed before this pair-core test. This is a frozen representation replication,
+not independent-corpus replication.

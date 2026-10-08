@@ -1,0 +1,6 @@
+﻿"ImportModule","Distribution","Version","Status"
+"matplotlib","matplotlib","3.10.9","DETECTED_AND_PINNED"
+"numpy","numpy","2.4.4","DETECTED_AND_PINNED"
+"pandas","pandas","3.0.2","DETECTED_AND_PINNED"
+"scipy","scipy","1.17.1","DETECTED_AND_PINNED"
+"sklearn","scikit-learn","1.8.0","DETECTED_AND_PINNED"

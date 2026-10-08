@@ -1,0 +1,92 @@
+B50.8 — Multi-Offset Phase Robustness & Effect Invariance Audit
+=================================================================
+
+Interpretation scope
+--------------------
+New offset WINDOW STATES: YES
+Same underlying prime corpus: YES
+Independent-corpus replication: NO
+B59/B59.1 used: NO
+
+Reference checkpoints frozen before B50.8
+-----------------------------------------
+B50.6 effect                            = -0.059111445783132543
+B50.7 +75 effect                       = -0.05094268476621422
+B50.7 reference verdict                = EXTERNAL_OFFSET_ADJACENCY_SPECIFICITY_REPLICATED
+
+Frozen new offsets
+------------------
+offsets                                 = [25, 50, 100, 125]
+protocol modified                       = False
+
+Per-offset results
+------------------
+ offset  offset_fraction_of_step                             b50_7_subrun_verdict  technical_valid  integrity_pass  matching_pass  mean_physical_percentile    effect  p_lower  negative  material_positive_reversal  nominal_offset_replication  negative_config_fraction  config_pass  negative_thirds  nominally_replicated_thirds  thirds_pass  matching_median_abs_log_error  matching_q90_abs_log_error
+     25                 0.166667 EXTERNAL_OFFSET_ADJACENCY_SPECIFICITY_REPLICATED             True            True           True                  0.445934 -0.054066 0.000200      True                       False                        True                       1.0         True                3                            3         True                       0.002623                    0.025273
+     50                 0.333333               OFFSET_REPLICATION_NULL_COMPATIBLE             True            True           True                  0.468599 -0.031401 0.002799      True                       False                       False                       1.0         True                2                            1        False                       0.002694                    0.020966
+    100                 0.666667 EXTERNAL_OFFSET_ADJACENCY_SPECIFICITY_REPLICATED             True            True           True                  0.434050 -0.065950 0.000200      True                       False                        True                       1.0         True                3                            3         True                       0.002750                    0.026779
+    125                 0.833333               OFFSET_REPLICATION_NULL_COMPATIBLE             True            True           True                  0.450302 -0.049698 0.000200      True                       False                        True                       1.0         True                3                            2         True                       0.002702                    0.022505
+
+Multi-offset sign / replication gates
+-------------------------------------
+negative offsets                        = 4/4
+nominal offset replications             = 3/4
+config-convergence passes               = 4/4
+thirds-robustness passes                = 3/4
+material positive reversals             = 0
+
+Effect invariance
+-----------------
+mean new-offset effect                  = -0.05027885864725873
+median new-offset effect                = -0.05188230296752619
+SD new-offset effect                    = 0.014337151845903022
+IQR new-offset effect                   = 0.011913349097748438
+range new-offset effect                 = 0.034549623834705334
+min / max new-offset effect             = -0.06595022624434393 / -0.0314006024096386
+mean effect ratio vs B50.7 +75          = 0.9869691571615843
+
+Frozen mandatory gates
+----------------------
+4/4 negative                            = True
+>=3/4 nominal (effect<=-0.04,p<=0.01)   = True
+median effect <= -0.05                  = True
+>=3/4 config convergence                = True
+>=3/4 thirds robustness                 = True
+no material positive reversal           = True
+all matching/integrity pass             = True
+
+Secondary pooled-null diagnostic
+--------------------------------
+replicates                               = 5000
+observed mean offset effect              = -0.05027885864725873
+null mean                                = -0.0004617932533300589
+null SD                                  = 0.0056547922874480615
+p_lower                                  = 0.0001999600079984003
+mandatory gate                           = False
+
+FINAL VERDICT: MULTI_OFFSET_PHASE_ROBUST_EFFECT_INVARIANCE
+
+REASON:
+The frozen negative adjacency-specificity effect remains negative at all four new offset phases, at least three offsets satisfy the pre-declared nominal replication gate, the median effect remains at or below -0.05, and frozen representation/thirds robustness gates converge across offsets.
+
+Interpretation boundary
+-----------------------
+This is a same-corpus multi-offset window-phase robustness audit. The offset
+states are new, but they are derived from the same underlying prime corpus and
+are not statistically independent corpora. No B59/B59.1 selector or predictive
+outcome is used. No individual-prime prediction, RH, or theorem claim is made.
+
+Key outputs
+-----------
+b50_8_multi_offset_plan.csv
+b50_8_plan_summary.json
+b50_8_extraction_progress.json
+b50_8_offset_effects.csv
+b50_8_pooled_null.csv
+b50_8_summary.json
+b50_8_verdict.txt
+b50_8_effect_by_offset.png
+b50_8_pooled_null.png
+b50_8_convergence_by_offset.png
+
+Each offset subdirectory also contains the complete frozen B50.7 artifacts.

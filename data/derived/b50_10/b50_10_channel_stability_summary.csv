@@ -1,0 +1,6 @@
+channel,full_effect,same_direction_thirds,nominal_thirds,thirds_stability_pass
+speed,-0.027710843373493943,3,1,False
+acceleration,-0.06513554216867468,3,3,True
+turn_change,-0.05790662650602407,3,2,True
+density_scale_change,-0.04250753012048197,3,2,True
+diffusion_step,-0.026731927710843373,3,1,False

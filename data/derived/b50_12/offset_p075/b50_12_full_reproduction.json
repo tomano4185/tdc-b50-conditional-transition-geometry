@@ -1,0 +1,14 @@
+{
+  "offset": 75,
+  "pca_parity": {
+    "max_abs_error": 1.0380585280245214e-14,
+    "mean_abs_error": 2.60287097413711e-16,
+    "min_component_spearman": 1.0,
+    "pass": true
+  },
+  "max_consensus_physical_percentile_error": 0.0,
+  "reconstructed_full_effect": -0.05094268476621422,
+  "saved_b50_7_full_effect": -0.05094268476621422,
+  "full_effect_abs_error": 0.0,
+  "pass": true
+}

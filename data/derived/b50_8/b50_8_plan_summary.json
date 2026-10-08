@@ -1,0 +1,77 @@
+{
+  "version": "B50.8_multi_offset_phase_robustness_effect_invariance_v1",
+  "created": "2026-09-08 05:58:11",
+  "lineage": {
+    "b50_6_verdict_ok": true,
+    "b50_7_reference_verdict_ok": true,
+    "b50_7_reference_offset": 75,
+    "b50_7_reference_offset_ok": true,
+    "b50_6_effect": -0.059111445783132543,
+    "b50_7_reference_effect": -0.05094268476621422,
+    "negative_reference_direction_ok": true,
+    "pass": true
+  },
+  "frozen_offsets": [
+    25,
+    50,
+    100,
+    125
+  ],
+  "applied_offsets": [
+    25,
+    50,
+    100,
+    125
+  ],
+  "protocol_modified_from_default": false,
+  "execution_only_offset": null,
+  "full_plan": true,
+  "cross_offset_exact_duplicate_count": 0,
+  "cross_offset_duplicates": [],
+  "all_offset_novelty_pass": true,
+  "offsets_exactly_frozen_default": true,
+  "plan_pass": true,
+  "rows": [
+    {
+      "offset": 25,
+      "offset_fraction_of_step": 0.16666666666666666,
+      "window_count": 666,
+      "dropped_window_count": 0,
+      "exact_duplicate_with_original_count": 0,
+      "novelty_pass": true,
+      "subrun_protocol_modified_from_b50_7_default": true,
+      "plan_dir": "d:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p025"
+    },
+    {
+      "offset": 50,
+      "offset_fraction_of_step": 0.3333333333333333,
+      "window_count": 666,
+      "dropped_window_count": 0,
+      "exact_duplicate_with_original_count": 0,
+      "novelty_pass": true,
+      "subrun_protocol_modified_from_b50_7_default": true,
+      "plan_dir": "d:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p050"
+    },
+    {
+      "offset": 100,
+      "offset_fraction_of_step": 0.6666666666666666,
+      "window_count": 665,
+      "dropped_window_count": 1,
+      "exact_duplicate_with_original_count": 0,
+      "novelty_pass": true,
+      "subrun_protocol_modified_from_b50_7_default": true,
+      "plan_dir": "d:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p100"
+    },
+    {
+      "offset": 125,
+      "offset_fraction_of_step": 0.8333333333333334,
+      "window_count": 665,
+      "dropped_window_count": 1,
+      "exact_duplicate_with_original_count": 0,
+      "novelty_pass": true,
+      "subrun_protocol_modified_from_b50_7_default": true,
+      "plan_dir": "d:\\hpc_project\\tdc_unified_core\\results\\b50_8_multi_offset\\offset_p125"
+    }
+  ],
+  "scientific_boundary": "Four new offset phases from the same underlying prime corpus; not independent-corpus replication."
+}

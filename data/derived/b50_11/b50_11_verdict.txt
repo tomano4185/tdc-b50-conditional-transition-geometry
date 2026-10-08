@@ -1,0 +1,131 @@
+B50.11 — Channel Redundancy & Interaction Audit
+================================================
+
+Interpretation scope
+--------------------
+Exact B50.10 mechanism cube reused: YES
+Exact B50.6 matched controls retained: YES
+All 31 non-empty channel subsets tested: YES
+Adaptive subset search: NO
+Independent-corpus replication: NO
+B59/B59.1 used: NO
+
+Frozen lineage
+--------------
+B50.10 verdict                       = CHANNEL_ASSOCIATION_WITHOUT_SCORE_LOCALIZATION
+B50.6 verdict                        = PHYSICAL_ADJACENCY_SPECIFICITY_REPLICATED
+frozen B50.10 artifact hashes exact  = True
+mechanism cube integrity             = True
+
+Full five-channel reproduction
+------------------------------
+reconstructed full effect            = -0.059111445783132543
+frozen B50.10 full effect            = -0.059111445783132543
+absolute error                       = 0.0
+FULL REPRODUCTION PASS               = True
+
+Exhaustive subset family
+------------------------
+tested subsets                       = 31
+sufficient subsets                   = 7
+reduced sufficient subsets           = 6
+minimal sufficient size              = 2
+minimal sufficient count             = 1
+minimal subset keys                  = ['turn_change+density_scale_change']
+
+Minimal sufficient subsets
+--------------------------
+ subset_order  subset_mask                       subset_key  subset_size  n_transitions  observed_mean_percentile  observed_median_percentile  observed_mean_effect  null_mean_effect  null_sd_effect  p_lower  p_upper  p_two_sided  same_sign_as_full  abs_effect_retention_fraction  near_full_retention  directional_p  holm_directional_p  holm_directional_pass  retention_pass  sufficient_subset
+           13           12 turn_change+density_scale_change            2            664                  0.443072                         0.4             -0.056928         -0.000676         0.01129   0.0002      1.0       0.0002               True                       0.963057                 True         0.0002            0.006199                   True            True               True
+
+Subset-size envelope
+--------------------
+ subset_size  subset_count  mean_effect  median_effect  min_effect  max_effect                                               best_negative_subset  best_negative_effect                                               best_absolute_subset  best_absolute_effect  sufficient_count
+           1             5    -0.024767      -0.027033   -0.046724    0.003652                                               density_scale_change             -0.046724                                               density_scale_change             -0.046724                 0
+           2            10    -0.040742      -0.046009   -0.056928   -0.009413                                   turn_change+density_scale_change             -0.056928                                   turn_change+density_scale_change             -0.056928                 1
+           3            10    -0.048705      -0.047760   -0.059977   -0.033321                    turn_change+density_scale_change+diffusion_step             -0.059977                    turn_change+density_scale_change+diffusion_step             -0.059977                 3
+           4             5    -0.054285      -0.053050   -0.060241   -0.048456              speed+turn_change+density_scale_change+diffusion_step             -0.060241              speed+turn_change+density_scale_change+diffusion_step             -0.060241                 2
+           5             1    -0.059111      -0.059111   -0.059111   -0.059111 speed+acceleration+turn_change+density_scale_change+diffusion_step             -0.059111 speed+acceleration+turn_change+density_scale_change+diffusion_step             -0.059111                 1
+
+Exact Shapley decomposition
+---------------------------
+             channel  shapley_effect_contribution  marginal_mean_unweighted  marginal_min  marginal_max  negative_marginal_contexts  positive_marginal_contexts  context_count  absolute_shapley_share  supports_negative_full_effect
+density_scale_change                    -0.023224                 -0.020381     -0.048080     -0.005610                          16                           0             16                0.380840                           True
+         turn_change                    -0.022264                 -0.019788     -0.050226     -0.007267                          16                           0             16                0.365096                           True
+        acceleration                    -0.009271                 -0.007321     -0.032530      0.002899                          12                           4             16                0.152037                           True
+      diffusion_step                    -0.005287                 -0.004177     -0.013065      0.000452                          15                           1             16                0.086695                           True
+               speed                     0.000935                  0.000544     -0.001958      0.003652                           6                          10             16                0.015332                          False
+
+Shapley efficiency
+------------------
+sum contributions                    = -0.05911144578313254
+full effect                          = -0.059111445783132543
+absolute efficiency error            = 6.938893903907228e-18
+efficiency PASS                      = True
+top-2 absolute Shapley share         = 0.7459353776497222
+top-2 concentrated diagnostic        = False
+
+Strongest pair interactions
+---------------------------
+           channel_i            channel_j  pair_only_synergy  global_shapley_interaction  global_interaction_abs    interaction_sign  material_interaction
+         turn_change density_scale_change           0.035015                    0.019920                0.019920 positive_antagonism                  True
+        acceleration          turn_change           0.026770                    0.015760                0.015760 positive_antagonism                  True
+        acceleration density_scale_change           0.026807                    0.014273                0.014273 positive_antagonism                  True
+         turn_change       diffusion_step           0.007191                    0.002683                0.002683 positive_antagonism                 False
+               speed          turn_change          -0.005008                   -0.001917                0.001917    negative_synergy                 False
+               speed         acceleration          -0.005497                   -0.001522                0.001522    negative_synergy                 False
+density_scale_change       diffusion_step           0.006965                    0.000988                0.000988 positive_antagonism                 False
+               speed density_scale_change          -0.001355                    0.000888                0.000888 positive_antagonism                 False
+               speed       diffusion_step          -0.004556                   -0.000875                0.000875    negative_synergy                 False
+        acceleration       diffusion_step           0.001581                   -0.000348                0.000348    negative_synergy                 False
+
+Minimal-subset thirds robustness
+--------------------------------
+ subset_mask                       subset_key  same_direction_thirds  nominal_thirds  thirds_robustness_pass
+          12 turn_change+density_scale_change                      3               3                    True
+
+Frozen sufficiency contract
+---------------------------
+same sign as full                    = required
+|effect| retention                   >= 0.9
+Holm directional p                  <= 0.05
+thirds same direction                = 3/3
+thirds nominal                       >= 2/3
+
+FINAL VERDICT: PAIRWISE_CORE_RECAPTURES_FULL_EFFECT
+
+REASON:
+A two-channel subset is sufficient under the frozen >=90% retention and Holm-directional gates, showing that the five-channel score contains substantial redundancy. At least one minimal pair also passes the frozen thirds robustness gate.
+
+Interpretation boundary
+-----------------------
+B50.11 is an exhaustive decomposition of score sufficiency, redundancy and
+interaction inside the already replicated B50.6/B50.10 matched-transition
+geometry. A reduced sufficient subset or Shapley contribution is not by itself
+a causal law. No independent corpus, B59 validation, individual-prime
+prediction, RH, or theorem claim is made.
+
+Key outputs
+-----------
+b50_11_protocol_manifest.json
+b50_11_plan.txt
+b50_11_subset_plan.csv
+b50_11_frozen_input_audit.csv
+b50_11_subset_score_cache.npz
+b50_11_subset_cache_manifest.json
+b50_11_subset_effects.csv
+b50_11_subset_null.csv
+b50_11_minimal_sufficient_subsets.csv
+b50_11_minimal_subset_summary.json
+b50_11_subset_size_envelope.csv
+b50_11_shapley.csv
+b50_11_shapley_efficiency.json
+b50_11_pair_interactions.csv
+b50_11_minimal_subset_thirds.csv
+b50_11_minimal_subset_thirds_summary.csv
+b50_11_summary.json
+b50_11_verdict.txt
+b50_11_all_subset_effects.png
+b50_11_subset_size_envelope.png
+b50_11_shapley_contributions.png
+b50_11_pair_interaction_matrix.png
